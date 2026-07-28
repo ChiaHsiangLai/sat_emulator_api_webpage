@@ -1,0 +1,13 @@
+<map id="moodycamel::ConcurrentQueue&lt; T, Traits &gt;::ImplicitProducerHash" name="moodycamel::ConcurrentQueue&lt; T, Traits &gt;::ImplicitProducerHash">
+<area shape="rect" id="node1" title=" " alt="" coords="5,44,256,85"/>
+<area shape="rect" id="node8" href="$d8/dc8/classmoodycamel_1_1ConcurrentQueue.html" title=" " alt="" coords="515,197,743,239"/>
+<area shape="rect" id="node2" href="$d3/dde/structmoodycamel_1_1ConcurrentQueue_1_1ImplicitProducerKVP.html" title=" " alt="" coords="1600,119,1843,160"/>
+<area shape="rect" id="node3" href="$d4/d1f/structmoodycamel_1_1ConcurrentQueue_1_1ImplicitProducer.html" title=" " alt="" coords="1283,209,1511,251"/>
+<area shape="rect" id="node4" href="$d4/dea/structmoodycamel_1_1ConcurrentQueue_1_1ProducerBase.html" title=" " alt="" coords="883,253,1111,295"/>
+<area shape="rect" id="node5" href="$d2/ddf/structmoodycamel_1_1details_1_1ConcurrentQueueProducerTypelessBase.html" title=" " alt="" coords="485,132,773,173"/>
+<area shape="rect" id="node6" href="$d1/dbb/structmoodycamel_1_1ProducerToken.html" title=" " alt="" coords="892,98,1101,125"/>
+<area shape="rect" id="node7" href="$dc/dde/structmoodycamel_1_1ConcurrentQueue_1_1Block.html" title=" " alt="" coords="17,257,245,299"/>
+<area shape="rect" id="node9" href="$db/d08/structmoodycamel_1_1ConcurrentQueue_1_1FreeList.html" title=" " alt="" coords="9,124,252,195"/>
+<area shape="rect" id="node10" href="$da/da8/structmoodycamel_1_1details_1_1ThreadExitListener.html" title=" " alt="" coords="917,188,1076,229"/>
+<area shape="rect" id="node11" href="$df/d23/classmoodycamel_1_1details_1_1ThreadExitNotifier.html" title=" " alt="" coords="1317,131,1476,172"/>
+</map>

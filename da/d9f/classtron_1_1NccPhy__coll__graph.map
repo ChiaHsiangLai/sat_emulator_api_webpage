@@ -1,0 +1,13 @@
+<map id="tron::NccPhy" name="tron::NccPhy">
+<area shape="rect" id="node1" title=" " alt="" coords="586,43,690,69"/>
+<area shape="rect" id="node3" href="$d0/dbb/classtron_1_1NccMac.html" title=" " alt="" coords="867,299,973,325"/>
+<area shape="rect" id="node2" href="$dc/db8/classtron_1_1LOG.html" title=" " alt="" coords="5,280,88,307"/>
+<area shape="rect" id="node4" href="$df/dc1/classtron_1_1NccLlc.html" title=" " alt="" coords="214,201,313,228"/>
+<area shape="rect" id="node5" href="$dc/d5e/classtron_1_1NccNetDev.html" title=" " alt="" coords="573,272,703,299"/>
+<area shape="rect" id="node8" href="$d9/d76/classtron_1_1NccCore.html" title=" " alt="" coords="583,436,693,463"/>
+<area shape="rect" id="node9" href="$d9/d65/classtron_1_1HandoverModule.html" title=" " alt="" coords="369,493,536,520"/>
+<area shape="rect" id="node10" href="$d6/d4c/classtron_1_1PacketTracer.html" title=" " alt="" coords="384,551,521,577"/>
+<area shape="rect" id="node6" href="$d2/de6/classtron_1_1Address.html" title=" " alt="" coords="209,359,317,385"/>
+<area shape="rect" id="node7" href="$d2/d5b/classtron_1_1SocketManager.html" title=" " alt="" coords="560,385,716,412"/>
+<area shape="rect" id="node11" href="$db/d70/classtron_1_1SuperFrameConf.html" title=" " alt="" coords="181,61,345,88"/>
+</map>

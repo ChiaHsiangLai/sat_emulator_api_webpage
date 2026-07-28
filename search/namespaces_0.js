@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['getsatpos_1998',['GetSatPos',['../namespaceGetSatPos.html',1,'']]]
+  ['getsatpos_1998',['GetSatPos',['../dc/d05/namespaceGetSatPos.html',1,'']]]
 ];

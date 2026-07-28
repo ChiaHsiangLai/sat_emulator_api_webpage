@@ -1,0 +1,25 @@
+var classtron_1_1SuperFrame =
+[
+    [ "FrameContainer_t", "dc/d4a/classtron_1_1SuperFrame.html#a2660d0e78349f49013a102e7f74a6199", null ],
+    [ "SupportedFramesMap_t", "dc/d4a/classtron_1_1SuperFrame.html#a468e307a1cacf956d07c06461d826dfc", null ],
+    [ "SuperFrame", "dc/d4a/classtron_1_1SuperFrame.html#a5a4debd32bf7027f5d14fff0d007609a", null ],
+    [ "AllocateBasedOnCc", "dc/d4a/classtron_1_1SuperFrame.html#aa7b876c7f68fcabba3dbd742e6ad98ab", null ],
+    [ "AllocateToFrame", "dc/d4a/classtron_1_1SuperFrame.html#a650117e83c825d1337771f565fa7d64a", null ],
+    [ "GenerateTimeSlots", "dc/d4a/classtron_1_1SuperFrame.html#a7b5e3fa8917b3e3b210143a3f551724a", null ],
+    [ "GetAllocatedFrameNum", "dc/d4a/classtron_1_1SuperFrame.html#a9fe28d57e0767c9012bcdcd0c4cf0999", null ],
+    [ "GetFrame", "dc/d4a/classtron_1_1SuperFrame.html#a1c86bd93fdb2bdd9fb7f447b242e40ec", null ],
+    [ "GetSuperframeConf", "dc/d4a/classtron_1_1SuperFrame.html#ad01f135c2c7cafb0a3d30b91e65ce8d6", null ],
+    [ "PreAllocateSymbols", "dc/d4a/classtron_1_1SuperFrame.html#af4e6718417b26e3b3c5d065a46cb1428", null ],
+    [ "RemoveAllocations", "dc/d4a/classtron_1_1SuperFrame.html#adf8c2bb8d09fce7f8f3aae95cc2fd0bb", null ],
+    [ "SetLog", "dc/d4a/classtron_1_1SuperFrame.html#a2cc8b53101f0a533254394f2a3973f8f", null ],
+    [ "m_fcaEnabled", "dc/d4a/classtron_1_1SuperFrame.html#a1b6cd243566426ffb3bd2303bb501e39", null ],
+    [ "m_frames", "dc/d4a/classtron_1_1SuperFrame.html#a167e6c53f49b521a349f3265f066d103", null ],
+    [ "m_log", "dc/d4a/classtron_1_1SuperFrame.html#ad45612d534db82fec3ca715c09921146", null ],
+    [ "m_minCarrierPayloadInBytes", "dc/d4a/classtron_1_1SuperFrame.html#ae9b79bc68c40f019b5cc0c0cf9f64948", null ],
+    [ "m_minimumRateBasedBytesLeft", "dc/d4a/classtron_1_1SuperFrame.html#abc2d3f69183a72144910e48c7d0ddaaf", null ],
+    [ "m_mostRobustSlotPayloadInBytes", "dc/d4a/classtron_1_1SuperFrame.html#adc8d7230e0ef42d9279001f0f24eb218", null ],
+    [ "m_rcBasedAllocationEnabled", "dc/d4a/classtron_1_1SuperFrame.html#a10d86309086b0fd58b26319ddda22575", null ],
+    [ "m_superframeConf", "dc/d4a/classtron_1_1SuperFrame.html#afec1592778e816feec44306b1c2367e1", null ],
+    [ "m_targetLoad", "dc/d4a/classtron_1_1SuperFrame.html#a89f3b7aa3f19ab0a78c95708508379b5", null ],
+    [ "m_totalBandwidth", "dc/d4a/classtron_1_1SuperFrame.html#a1458853472fbf1819cbe6c96c10cd9d4", null ]
+];
