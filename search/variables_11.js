@@ -1,0 +1,26 @@
+var searchData=
+[
+  ['sat_3503',['sat',['../namespacesatMobility.html#a7281f3485aab298f5b0b8598aff19f57',1,'satMobility.sat()'],['../namespaceGetSatPos.html#a9d62c8511f73bf224fbf6c9637a78901',1,'GetSatPos.sat()']]],
+  ['sat_5fcolors_3504',['sat_colors',['../namespaceplot__sat__constellation__v2.html#a4cd79d705f439cf4d1fd37389936611c',1,'plot_sat_constellation_v2']]],
+  ['sat_5fdata_3505',['sat_data',['../namespaceplot__sat__constellation__v2.html#ac8c2673676411807ace816621b93a6cb',1,'plot_sat_constellation_v2']]],
+  ['sat_5ffiles_3506',['sat_files',['../namespaceplot__sat__constellation__v2.html#a41cbc4d13a5fb437d44884f475378a5a',1,'plot_sat_constellation_v2']]],
+  ['sat_5fids_3507',['sat_ids',['../namespaceplot__sat__constellation__v2.html#a9e7464fa0b8fa5a117b570e921a2b642',1,'plot_sat_constellation_v2']]],
+  ['sat_5fip_3508',['sat_ip',['../namespacesatMobility.html#af29c5d6fdca9a6ff4836e8eaf3cfa52d',1,'satMobility.sat_ip()'],['../namespaceGetSatPos.html#a41e66f9c8af112ee9f3f06dec1c5bcb8',1,'GetSatPos.sat_ip()']]],
+  ['sat_5fpoints_3509',['sat_points',['../namespaceplot__sat__constellation__v2.html#ac6c1066a53bd6fee64a88335b4449997',1,'plot_sat_constellation_v2']]],
+  ['satid_3510',['satId',['../structtron_1_1GwRoutingInfo.html#a2deb7b0efaa0d019427f241a14a2c62c',1,'tron::GwRoutingInfo::satId()'],['../structtron_1_1UtRoutingInfo.html#a569cb57e1d28bb7946ee001913948815',1,'tron::UtRoutingInfo::satId()']]],
+  ['satip_3511',['satIp',['../structtron_1_1GwRoutingInfo.html#a80ee8cfeb6e6babefb73a57dced2a6bd',1,'tron::GwRoutingInfo::satIp()'],['../structtron_1_1UtRoutingInfo.html#ab6b76b68a7cf4f3540f4f5fa7367ba45',1,'tron::UtRoutingInfo::satIp()']]],
+  ['segindex_3512',['segIndex',['../structtron_1_1AppInterface_1_1SegmentInfo.html#a9630797114f72d51cb52378a932de674',1,'tron::AppInterface::SegmentInfo']]],
+  ['segments_3513',['segments',['../structtron_1_1NccMac_1_1ReassemblyEntry.html#a3afa77e79a487bfe99445629837b6571',1,'tron::NccMac::ReassemblyEntry']]],
+  ['send_5ftime_5fwrap_5fperiod_5fs_3514',['SEND_TIME_WRAP_PERIOD_S',['../namespacetron.html#a18709376a7f901cf671dd5008710ba4a',1,'tron']]],
+  ['short_5fburst_5flength_3515',['SHORT_BURST_LENGTH',['../classtron_1_1WaveformConf.html#a119521aa1884d69cba10147cdde8e67f',1,'tron::WaveformConf']]],
+  ['should_5fbe_5fon_5ffreelist_3516',['SHOULD_BE_ON_FREELIST',['../structmoodycamel_1_1ConcurrentQueue_1_1FreeList.html#a8c5a97db3f502da842d430ac3985bdb1',1,'moodycamel::ConcurrentQueue::FreeList']]],
+  ['sigma_5flos_3517',['sigma_LOS',['../structtron_1_1LooFadingModel_1_1LooParams.html#a28e1c1c57c87e4feb727c9812333c05a',1,'tron::LooFadingModel::LooParams']]],
+  ['size_3518',['size',['../structmoodycamel_1_1ConcurrentQueue_1_1ExplicitProducer_1_1BlockIndexHeader.html#ab410c0c1221e56ee2d82b5d1ed7f8f6a',1,'moodycamel::ConcurrentQueue::ExplicitProducer::BlockIndexHeader']]],
+  ['slottedalohatxopportunity_3519',['slottedAlohaTxOpportunity',['../structtron_1_1RandomAccess_1_1RandomAccessTxOpportunities__s.html#aa99ca15e9e39d8779b477f47ebe00c0c',1,'tron::RandomAccess::RandomAccessTxOpportunities_s']]],
+  ['slottype_3520',['slotType',['../structtron_1_1UtMAC_1_1DaTxOpportunityParam.html#a136f94907ee3679595dc4fb71a877db5',1,'tron::UtMAC::DaTxOpportunityParam::slotType()'],['../structtron_1_1UtMAC_1_1RaTxOpportunityParam.html#a11131d03dcd5607566f3f316b095e5dd',1,'tron::UtMAC::RaTxOpportunityParam::slotType()']]],
+  ['sock_3521',['sock',['../structtron_1_1UtMAC_1_1DaTxOpportunityParam.html#a0da379b3504f57e978568d14ded93ff5',1,'tron::UtMAC::DaTxOpportunityParam']]],
+  ['srcip_3522',['srcIp',['../structtron_1_1AppInterface_1_1SegmentInfo.html#a404df3cdc16c9b9c4eea2b1d2281c1b3',1,'tron::AppInterface::SegmentInfo']]],
+  ['statwindowsize_3523',['statWindowSize',['../structtron_1_1UeApp_1_1Config.html#ad75e4bb2586ecd32846a1619f26f9830',1,'tron::UeApp::Config']]],
+  ['step_5ftime_3524',['step_time',['../namespacesatMobility.html#a24a5699703ea27bf0a8e09e00eb6fe16',1,'satMobility']]],
+  ['subpoint_3525',['subpoint',['../namespaceGetSatPos.html#a6de47485970e95328b706e005798c9a5',1,'GetSatPos.subpoint()'],['../namespacesatMobility.html#a1eef0a9fe507b2bc339b8768de89dfc5',1,'satMobility.subpoint()']]]
+];
