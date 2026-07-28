@@ -24,7 +24,7 @@
 */
 var NAVTREE =
 [
-  [ "SNS3 Impl - Model API", "index.html", [
+  [ "Satellite network emulator API", "index.html", [
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
