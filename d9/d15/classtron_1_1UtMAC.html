@@ -363,6 +363,8 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:af3a07c15c0ade65a05850ff2f810acaa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d15/classtron_1_1UtMAC.html#af3a07c15c0ade65a05850ff2f810acaa">StartPreSerializeTask</a> ()</td></tr>
 <tr class="memdesc:af3a07c15c0ade65a05850ff2f810acaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Install <a class="el" href="../../da/d95/classtron_1_1Queue.html">Queue</a> callback and launch PreSerializeWorker thread.  <a href="../../d9/d15/classtron_1_1UtMAC.html#af3a07c15c0ade65a05850ff2f810acaa">More...</a><br /></td></tr>
 <tr class="separator:af3a07c15c0ade65a05850ff2f810acaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35ec6b7055014f405e17599648926587"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d15/classtron_1_1UtMAC.html#a35ec6b7055014f405e17599648926587">FlushRawQueueImmediate</a> (<a class="el" href="../../d1/db5/namespacetron.html#ab94583cb39933c825bbcee9a2a8626e5">FlowType</a> flow)</td></tr>
+<tr class="separator:a35ec6b7055014f405e17599648926587"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -422,6 +424,8 @@ Private Attributes</h2></td></tr>
 <tr class="separator:aea5b31df71b3c6de478b8d9013b87a42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab847a7c2ebdcc5cceeb145fb0b630d14"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d15/classtron_1_1UtMAC.html#ab847a7c2ebdcc5cceeb145fb0b630d14">m_sendHeartbeatMsgEnabled</a></td></tr>
 <tr class="separator:ab847a7c2ebdcc5cceeb145fb0b630d14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33a2bd036c3ec391b21749ee8e543c1a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d15/classtron_1_1UtMAC.html#a33a2bd036c3ec391b21749ee8e543c1a">m_tbtpBypassEnabled</a></td></tr>
+<tr class="separator:a33a2bd036c3ec391b21749ee8e543c1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade7b61b6a4114e1000d867acca22e8a8"><td class="memItemLeft" align="right" valign="top">std::mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d15/classtron_1_1UtMAC.html#ade7b61b6a4114e1000d867acca22e8a8">m_rxQueueMtx</a></td></tr>
 <tr class="separator:ade7b61b6a4114e1000d867acca22e8a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab8f6cb2d03a7053b4afe82f1fda3963b"><td class="memItemLeft" align="right" valign="top">std::condition_variable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d15/classtron_1_1UtMAC.html#ab8f6cb2d03a7053b4afe82f1fda3963b">m_rxQueueCv</a></td></tr>
@@ -538,7 +542,7 @@ Private Attributes</h2></td></tr>
 
 <p>Background: PHY link up/down, optional HO on loss or queued HO message. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l01436">1436</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l01445">1445</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
 
 </div>
 </div>
@@ -559,7 +563,7 @@ Private Attributes</h2></td></tr>
 
 <p>Empty and delete queued RX packets (locked). </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l00202">202</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l00203">203</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
 
 </div>
 </div>
@@ -620,7 +624,7 @@ Private Attributes</h2></td></tr>
 
 <p>Build a padding packet of exactly targetPktSizeBytes (fills overhead + payload). </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l01740">1740</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l01749">1749</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
 
 </div>
 </div>
@@ -642,7 +646,7 @@ Private Attributes</h2></td></tr>
 
 <p>At scheduled time: pull LLC packets for this slot and transmit (requires TDMA_SYNC). </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l00529">529</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l00538">538</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
 
 </div>
 </div>
@@ -663,7 +667,7 @@ Private Attributes</h2></td></tr>
 
 <p>Superframe-periodic: retry logon until logged on; runs on detached thread from Initialize. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l00814">814</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l00823">823</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
 
 </div>
 </div>
@@ -695,7 +699,7 @@ Private Attributes</h2></td></tr>
 
 <p>Ask <a class="el" href="../../d7/d1a/classtron_1_1RandomAccess.html">RandomAccess</a> model for next RA opportunity; may schedule slotted-ALOHA TX. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l00778">778</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l00787">787</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
 
 </div>
 </div>
@@ -719,7 +723,7 @@ Private Attributes</h2></td></tr>
 <p>get the slot payload</p>
 <p>reduce the SA signaling overhead from the payload</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l01095">1095</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l01104">1104</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
 
 </div>
 </div>
@@ -740,7 +744,7 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Drain the given LLC <a class="el" href="../../da/d95/classtron_1_1Queue.html">Queue</a>, serialize each <a class="el" href="../../db/dd8/classtron_1_1Packet.html">Packet</a>, and push to the companion <a class="el" href="../../d1/d47/classtron_1_1RawQueue.html">RawQueue</a>. Called by PreSerializeWorker; may also be called explicitly to top-up the buffer before a known transmission window. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l01774">1774</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l01783">1783</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
 
 </div>
 </div>
@@ -762,7 +766,7 @@ Private Attributes</h2></td></tr>
 
 <p>Add standard tags (E2E, GW, MAC, time, pkt ID) to pkt before serialization. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l00746">746</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l00755">755</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
 
 </div>
 </div>
@@ -784,7 +788,7 @@ Private Attributes</h2></td></tr>
 
 <p>Add E2E, MAC, and GW address tags to a TC (control) packet before encapsulation. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l01834">1834</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l01878">1878</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
 
 </div>
 </div>
@@ -828,7 +832,7 @@ Private Attributes</h2></td></tr>
 
 <p>Dequeue up to bytes from LLC queue selected by RC index and slot type. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l00647">647</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l00656">656</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
 
 </div>
 </div>
@@ -878,7 +882,7 @@ Private Attributes</h2></td></tr>
 
 <p>Scan time slots from opportunityOffset; reserve slot in m_usedRandomAccessSlots if free. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l01143">1143</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l01152">1152</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
 
 </div>
 </div>
@@ -910,7 +914,36 @@ Private Attributes</h2></td></tr>
 
 <p>Replace third octet of ip with newSatId (rewrites UT/GW addresses after HO). </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l01413">1413</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l01422">1422</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a35ec6b7055014f405e17599648926587"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35ec6b7055014f405e17599648926587">&#9670;&nbsp;</a></span>FlushRawQueueImmediate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tron::UtMAC::FlushRawQueueImmediate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/db5/namespacetron.html#ab94583cb39933c825bbcee9a2a8626e5">FlowType</a>&#160;</td>
+          <td class="paramname"><em>flow</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>TBTP bypass mode: drain the given <a class="el" href="../../d1/d47/classtron_1_1RawQueue.html">RawQueue</a>'s full backlog and transmit it immediately, ignoring TBTP slot timing/capacity. No-op if the queue is empty. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l01840">1840</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
 
 </div>
 </div>
@@ -1042,7 +1075,7 @@ Private Attributes</h2></td></tr>
 
 <p>Extract third octet of an IPv4 string as the satellite ID in this topology. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l01396">1396</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l01405">1405</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
 
 </div>
 </div>
@@ -1064,7 +1097,7 @@ Private Attributes</h2></td></tr>
 
 <p>Map 8-bit TBTP SF counter to absolute superframe index (handles wrap vs current time). </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l01311">1311</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l01320">1320</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
 
 </div>
 </div>
@@ -1198,7 +1231,7 @@ Private Attributes</h2></td></tr>
 
 <p>Change default route and PHY TCP connections to new satellite (HO path). </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l01331">1331</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l01340">1340</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
 
 </div>
 </div>
@@ -1219,7 +1252,7 @@ Private Attributes</h2></td></tr>
 
 <p>True if TBTP implies future or in-progress DA slots for this UT (also prunes old TBTPs). </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l00895">895</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l00904">904</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
 
 </div>
 </div>
@@ -1240,7 +1273,7 @@ Private Attributes</h2></td></tr>
 
 <p>Build superframe + random-access model, clear queues, align to next SF start, spawn DoFrameStart. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l00061">61</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l00062">62</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
 
 </div>
 </div>
@@ -1261,7 +1294,7 @@ Private Attributes</h2></td></tr>
 
 <p>Create and start BitsCollectors for ut_mac_tx and ut_mac_payload_tx statistics. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l00110">110</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l00111">111</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
 
 </div>
 </div>
@@ -1282,7 +1315,7 @@ Private Attributes</h2></td></tr>
 
 <p>Clear logon state, stop TS scheduling, switch to OFF_STANDBY. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l00885">885</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l00894">894</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
 
 </div>
 </div>
@@ -1303,7 +1336,7 @@ Private Attributes</h2></td></tr>
 
 <p>True when MAC may send another logon (state READY_FOR_LOGON). </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l00874">874</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l00883">883</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
 
 </div>
 </div>
@@ -1343,7 +1376,7 @@ Private Attributes</h2></td></tr>
 
 <p>Log detailed TBTP message info: SF counter, frame ID, time slot details. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l01670">1670</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l01679">1679</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
 
 </div>
 </div>
@@ -1381,7 +1414,7 @@ Private Attributes</h2></td></tr>
 
 <p>Allocate a <a class="el" href="../../d1/dfe/classtron_1_1BitsCollector.html">BitsCollector</a> writing to fpath/logName with the given sliding-window size. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l00099">99</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l00100">100</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
 
 </div>
 </div>
@@ -1402,7 +1435,7 @@ Private Attributes</h2></td></tr>
 
 <p>Return the byte overhead of an empty TC packet (used to size RA and dummy payloads). </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l01724">1724</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l01733">1733</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
 
 </div>
 </div>
@@ -1424,7 +1457,7 @@ Private Attributes</h2></td></tr>
 
 <p>Called by PHY to clear m_isConnecting flag after a connection attempt completes. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l01592">1592</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l01601">1601</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
 
 </div>
 </div>
@@ -1462,7 +1495,7 @@ Private Attributes</h2></td></tr>
 
 <p>After HO TCP connects: rewrite UT/GW addresses, disconnect old satellite socket. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l01360">1360</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l01369">1369</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
 
 </div>
 </div>
@@ -1491,7 +1524,7 @@ Private Attributes</h2></td></tr>
 
 <p>RX worker: pop m_rxQueue and call ReceiveSignalingPacket until stopped. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l00159">159</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l00160">160</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
 
 </div>
 </div>
@@ -1520,7 +1553,7 @@ Private Attributes</h2></td></tr>
 
 <p>Background loop: wait for new packets → serialize → push to <a class="el" href="../../d1/d47/classtron_1_1RawQueue.html">RawQueue</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l01796">1796</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l01805">1805</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
 
 </div>
 </div>
@@ -1539,7 +1572,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l01272">1272</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l01281">1281</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
 
 </div>
 </div>
@@ -1560,7 +1593,7 @@ Private Attributes</h2></td></tr>
 
 <p>Loop: periodic DoRandomAccess (optional background RA; not always started). </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l01289">1289</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l01298">1298</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
 
 </div>
 </div>
@@ -1582,7 +1615,7 @@ Private Attributes</h2></td></tr>
 
 <p>PHY RX path: deserialize bytes, optional TBTP delay log, enqueue for PacketProcessinTask. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l00124">124</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l00125">125</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
 
 </div>
 </div>
@@ -1614,7 +1647,7 @@ Private Attributes</h2></td></tr>
 
 <p>Dispatch control messages: logon response, TBTP, logoff, handover. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l00216">216</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l00217">217</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
 
 </div>
 </div>
@@ -1636,7 +1669,7 @@ Private Attributes</h2></td></tr>
 
 <p>Drop RA reservation records for superframes older than superFrameId. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l01253">1253</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l01262">1262</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
 
 </div>
 </div>
@@ -1657,7 +1690,7 @@ Private Attributes</h2></td></tr>
 
 <p>Delete TBTP messages whose superframe start is already in the past. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l00939">939</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l00948">948</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
 
 </div>
 </div>
@@ -1678,7 +1711,7 @@ Private Attributes</h2></td></tr>
 
 <p>Stop frame/RX threads, clear scheduler and TBTP state before connecting to new satellite. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l01569">1569</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l01578">1578</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
 
 </div>
 </div>
@@ -1710,7 +1743,7 @@ Private Attributes</h2></td></tr>
 
 <p>Schedule DoDaTxTransmit at daTxTime using <a class="el" href="../../d1/d91/classtron_1_1TxScheduler.html">TxScheduler</a> (steady_clock deadline). </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l00509">509</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l00518">518</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
 
 </div>
 </div>
@@ -1748,7 +1781,7 @@ Private Attributes</h2></td></tr>
 
 <p>If no DAMA, find free RA slot and schedule DoSlottedAlohaTransmit (or run immediately). </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l00967">967</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l00976">976</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
 
 </div>
 </div>
@@ -1780,7 +1813,7 @@ Private Attributes</h2></td></tr>
 
 <p>Map TBTP to wall-clock SF, skip duplicate sfIndex, enqueue per-slot DA TX via <a class="el" href="../../d1/d91/classtron_1_1TxScheduler.html">TxScheduler</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l00345">345</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l00354">354</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
 
 </div>
 </div>
@@ -1831,7 +1864,7 @@ Private Attributes</h2></td></tr>
 <p>Starting at superframeStartTime, locate first usable RA slot index in frameConf. </p>
 <p>if we can not use the current superframe, e.g., we are in the the middle of the last slot of the frame, we will use offset 0, e.g., the first slot of the next frame</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l01127">1127</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l01136">1136</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
 
 </div>
 </div>
@@ -1853,7 +1886,7 @@ Private Attributes</h2></td></tr>
 
 <p>Send a TCP disconnect notification to sock. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l01612">1612</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l01621">1621</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
 
 </div>
 </div>
@@ -1875,7 +1908,7 @@ Private Attributes</h2></td></tr>
 
 <p>Send a handover notification control message to sock. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l01641">1641</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l01650">1650</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
 
 </div>
 </div>
@@ -1896,7 +1929,7 @@ Private Attributes</h2></td></tr>
 
 <p>Periodically inject heartbeat control traffic via LLC when TX allowed. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l01543">1543</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l01552">1552</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
 
 </div>
 </div>
@@ -1918,7 +1951,7 @@ Private Attributes</h2></td></tr>
 
 <p>Build and send logon; sets next allowed logon retry time. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l00312">312</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l00321">321</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
 
 </div>
 </div>
@@ -2176,7 +2209,7 @@ Private Attributes</h2></td></tr>
 
 <p>Install RA model; wires HasScheduledTimeSlots as DAMA-available callback. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l00959">959</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l00968">968</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
 
 </div>
 </div>
@@ -2254,7 +2287,7 @@ Private Attributes</h2></td></tr>
 
 <p>Link lost: ask <a class="el" href="../../d9/d65/classtron_1_1HandoverModule.html">HandoverModule</a> for next satellite and reconnect or call <a class="el" href="../../d9/d15/classtron_1_1UtMAC.html#ac9a189570b0844115e4743a01cb408e5" title="Change default route and PHY TCP connections to new satellite (HO path).">Handover()</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l01511">1511</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l01520">1520</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
 
 </div>
 </div>
@@ -2275,7 +2308,7 @@ Private Attributes</h2></td></tr>
 
 <p>Spawn SendHeartbeatMsgTask as a detached background thread. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l01560">1560</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l01569">1569</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
 
 </div>
 </div>
@@ -2296,7 +2329,7 @@ Private Attributes</h2></td></tr>
 
 <p>Spawn CheckLinkStatusAndCnt as a detached background thread. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l01535">1535</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l01544">1544</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
 
 </div>
 </div>
@@ -2375,7 +2408,7 @@ Private Attributes</h2></td></tr>
 
 <p>Install <a class="el" href="../../da/d95/classtron_1_1Queue.html">Queue</a> callback and launch PreSerializeWorker thread. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l01822">1822</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l01866">1866</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
 
 </div>
 </div>
@@ -2396,7 +2429,7 @@ Private Attributes</h2></td></tr>
 
 <p>Spawn PacketProcessinTask thread to drain m_rxQueue. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l00192">192</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l00193">193</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
 
 </div>
 </div>
@@ -2428,7 +2461,7 @@ Private Attributes</h2></td></tr>
 
 <p>Optionally start link-check and heartbeat threads, then Initialize, RX task, RM + user apps. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l01599">1599</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l01608">1608</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
 
 </div>
 </div>
@@ -2496,7 +2529,7 @@ Private Attributes</h2></td></tr>
 
 <p>Sleep until tx_start_time if needed, then forward buf to PHY. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l00771">771</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l00780">780</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
 
 </div>
 </div>
@@ -2540,7 +2573,7 @@ Private Attributes</h2></td></tr>
 
 <p>Serialize buf and call Transmit; records per-packet PHY stats. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l00716">716</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l00725">725</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
 
 </div>
 </div>
@@ -2572,7 +2605,7 @@ Private Attributes</h2></td></tr>
 
 <p>Serialize, trace, optional state nudge, then <a class="el" href="../../d9/d15/classtron_1_1UtMAC.html#a68885ddb1d279a3659e3f91a031bafed" title="Sleep until tx_start_time if needed, then forward buf to PHY.">Transmit()</a> for each packet. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l00684">684</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l00693">693</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
 
 </div>
 </div>
@@ -2611,7 +2644,7 @@ Private Attributes</h2></td></tr>
 <p>Mark (superFrameId, allocationChannel, slotId) as used for local RA collision avoidance. </p>
 <p>remove past RA Tx opportunity information</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l01197">1197</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/dce/utMac_8cpp_source.html#l01206">1206</a> of file <a class="el" href="../../d9/dce/utMac_8cpp_source.html">utMac.cpp</a>.</p>
 
 </div>
 </div>
@@ -2689,7 +2722,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../da/d90/utMac_8hpp_source.html#l00518">518</a> of file <a class="el" href="../../da/d90/utMac_8hpp_source.html">utMac.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../da/d90/utMac_8hpp_source.html#l00519">519</a> of file <a class="el" href="../../da/d90/utMac_8hpp_source.html">utMac.hpp</a>.</p>
 
 </div>
 </div>
@@ -2713,7 +2746,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../da/d90/utMac_8hpp_source.html#l00519">519</a> of file <a class="el" href="../../da/d90/utMac_8hpp_source.html">utMac.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../da/d90/utMac_8hpp_source.html#l00520">520</a> of file <a class="el" href="../../da/d90/utMac_8hpp_source.html">utMac.hpp</a>.</p>
 
 </div>
 </div>
@@ -2785,7 +2818,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../da/d90/utMac_8hpp_source.html#l00527">527</a> of file <a class="el" href="../../da/d90/utMac_8hpp_source.html">utMac.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../da/d90/utMac_8hpp_source.html#l00528">528</a> of file <a class="el" href="../../da/d90/utMac_8hpp_source.html">utMac.hpp</a>.</p>
 
 </div>
 </div>
@@ -2809,7 +2842,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../da/d90/utMac_8hpp_source.html#l00529">529</a> of file <a class="el" href="../../da/d90/utMac_8hpp_source.html">utMac.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../da/d90/utMac_8hpp_source.html#l00530">530</a> of file <a class="el" href="../../da/d90/utMac_8hpp_source.html">utMac.hpp</a>.</p>
 
 </div>
 </div>
@@ -2833,7 +2866,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../da/d90/utMac_8hpp_source.html#l00528">528</a> of file <a class="el" href="../../da/d90/utMac_8hpp_source.html">utMac.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../da/d90/utMac_8hpp_source.html#l00529">529</a> of file <a class="el" href="../../da/d90/utMac_8hpp_source.html">utMac.hpp</a>.</p>
 
 </div>
 </div>
@@ -2857,7 +2890,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../da/d90/utMac_8hpp_source.html#l00531">531</a> of file <a class="el" href="../../da/d90/utMac_8hpp_source.html">utMac.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../da/d90/utMac_8hpp_source.html#l00532">532</a> of file <a class="el" href="../../da/d90/utMac_8hpp_source.html">utMac.hpp</a>.</p>
 
 </div>
 </div>
@@ -3145,7 +3178,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../da/d90/utMac_8hpp_source.html#l00517">517</a> of file <a class="el" href="../../da/d90/utMac_8hpp_source.html">utMac.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../da/d90/utMac_8hpp_source.html#l00518">518</a> of file <a class="el" href="../../da/d90/utMac_8hpp_source.html">utMac.hpp</a>.</p>
 
 </div>
 </div>
@@ -3169,7 +3202,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../da/d90/utMac_8hpp_source.html#l00512">512</a> of file <a class="el" href="../../da/d90/utMac_8hpp_source.html">utMac.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../da/d90/utMac_8hpp_source.html#l00513">513</a> of file <a class="el" href="../../da/d90/utMac_8hpp_source.html">utMac.hpp</a>.</p>
 
 </div>
 </div>
@@ -3193,7 +3226,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../da/d90/utMac_8hpp_source.html#l00511">511</a> of file <a class="el" href="../../da/d90/utMac_8hpp_source.html">utMac.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../da/d90/utMac_8hpp_source.html#l00512">512</a> of file <a class="el" href="../../da/d90/utMac_8hpp_source.html">utMac.hpp</a>.</p>
 
 </div>
 </div>
@@ -3241,7 +3274,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../da/d90/utMac_8hpp_source.html#l00544">544</a> of file <a class="el" href="../../da/d90/utMac_8hpp_source.html">utMac.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../da/d90/utMac_8hpp_source.html#l00545">545</a> of file <a class="el" href="../../da/d90/utMac_8hpp_source.html">utMac.hpp</a>.</p>
 
 </div>
 </div>
@@ -3265,7 +3298,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../da/d90/utMac_8hpp_source.html#l00543">543</a> of file <a class="el" href="../../da/d90/utMac_8hpp_source.html">utMac.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../da/d90/utMac_8hpp_source.html#l00544">544</a> of file <a class="el" href="../../da/d90/utMac_8hpp_source.html">utMac.hpp</a>.</p>
 
 </div>
 </div>
@@ -3289,7 +3322,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../da/d90/utMac_8hpp_source.html#l00542">542</a> of file <a class="el" href="../../da/d90/utMac_8hpp_source.html">utMac.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../da/d90/utMac_8hpp_source.html#l00543">543</a> of file <a class="el" href="../../da/d90/utMac_8hpp_source.html">utMac.hpp</a>.</p>
 
 </div>
 </div>
@@ -3313,7 +3346,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../da/d90/utMac_8hpp_source.html#l00541">541</a> of file <a class="el" href="../../da/d90/utMac_8hpp_source.html">utMac.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../da/d90/utMac_8hpp_source.html#l00542">542</a> of file <a class="el" href="../../da/d90/utMac_8hpp_source.html">utMac.hpp</a>.</p>
 
 </div>
 </div>
@@ -3337,7 +3370,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../da/d90/utMac_8hpp_source.html#l00533">533</a> of file <a class="el" href="../../da/d90/utMac_8hpp_source.html">utMac.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../da/d90/utMac_8hpp_source.html#l00534">534</a> of file <a class="el" href="../../da/d90/utMac_8hpp_source.html">utMac.hpp</a>.</p>
 
 </div>
 </div>
@@ -3361,7 +3394,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../da/d90/utMac_8hpp_source.html#l00534">534</a> of file <a class="el" href="../../da/d90/utMac_8hpp_source.html">utMac.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../da/d90/utMac_8hpp_source.html#l00535">535</a> of file <a class="el" href="../../da/d90/utMac_8hpp_source.html">utMac.hpp</a>.</p>
 
 </div>
 </div>
@@ -3481,7 +3514,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../da/d90/utMac_8hpp_source.html#l00507">507</a> of file <a class="el" href="../../da/d90/utMac_8hpp_source.html">utMac.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../da/d90/utMac_8hpp_source.html#l00508">508</a> of file <a class="el" href="../../da/d90/utMac_8hpp_source.html">utMac.hpp</a>.</p>
 
 </div>
 </div>
@@ -3505,7 +3538,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../da/d90/utMac_8hpp_source.html#l00506">506</a> of file <a class="el" href="../../da/d90/utMac_8hpp_source.html">utMac.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../da/d90/utMac_8hpp_source.html#l00507">507</a> of file <a class="el" href="../../da/d90/utMac_8hpp_source.html">utMac.hpp</a>.</p>
 
 </div>
 </div>
@@ -3529,7 +3562,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../da/d90/utMac_8hpp_source.html#l00505">505</a> of file <a class="el" href="../../da/d90/utMac_8hpp_source.html">utMac.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../da/d90/utMac_8hpp_source.html#l00506">506</a> of file <a class="el" href="../../da/d90/utMac_8hpp_source.html">utMac.hpp</a>.</p>
 
 </div>
 </div>
@@ -3673,7 +3706,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../da/d90/utMac_8hpp_source.html#l00551">551</a> of file <a class="el" href="../../da/d90/utMac_8hpp_source.html">utMac.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../da/d90/utMac_8hpp_source.html#l00556">556</a> of file <a class="el" href="../../da/d90/utMac_8hpp_source.html">utMac.hpp</a>.</p>
 
 </div>
 </div>
@@ -3697,7 +3730,31 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../da/d90/utMac_8hpp_source.html#l00521">521</a> of file <a class="el" href="../../da/d90/utMac_8hpp_source.html">utMac.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../da/d90/utMac_8hpp_source.html#l00522">522</a> of file <a class="el" href="../../da/d90/utMac_8hpp_source.html">utMac.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a33a2bd036c3ec391b21749ee8e543c1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33a2bd036c3ec391b21749ee8e543c1a">&#9670;&nbsp;</a></span>m_tbtpBypassEnabled</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool tron::UtMAC::m_tbtpBypassEnabled</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/d90/utMac_8hpp_source.html#l00505">505</a> of file <a class="el" href="../../da/d90/utMac_8hpp_source.html">utMac.hpp</a>.</p>
 
 </div>
 </div>
@@ -3745,7 +3802,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../da/d90/utMac_8hpp_source.html#l00522">522</a> of file <a class="el" href="../../da/d90/utMac_8hpp_source.html">utMac.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../da/d90/utMac_8hpp_source.html#l00523">523</a> of file <a class="el" href="../../da/d90/utMac_8hpp_source.html">utMac.hpp</a>.</p>
 
 </div>
 </div>
@@ -3769,7 +3826,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../da/d90/utMac_8hpp_source.html#l00525">525</a> of file <a class="el" href="../../da/d90/utMac_8hpp_source.html">utMac.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../da/d90/utMac_8hpp_source.html#l00526">526</a> of file <a class="el" href="../../da/d90/utMac_8hpp_source.html">utMac.hpp</a>.</p>
 
 </div>
 </div>

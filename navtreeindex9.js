@@ -1,5 +1,9 @@
 var NAVTREEINDEX9 =
 {
+"dc/d4a/classtron_1_1SuperFrame.html":[1,0,1,80],
+"dc/d4a/classtron_1_1SuperFrame.html#a10d86309086b0fd58b26319ddda22575":[1,0,1,80,18],
+"dc/d4a/classtron_1_1SuperFrame.html#a1458853472fbf1819cbe6c96c10cd9d4":[1,0,1,80,21],
+"dc/d4a/classtron_1_1SuperFrame.html#a167e6c53f49b521a349f3265f066d103":[1,0,1,80,13],
 "dc/d4a/classtron_1_1SuperFrame.html#a1b6cd243566426ffb3bd2303bb501e39":[1,0,1,80,12],
 "dc/d4a/classtron_1_1SuperFrame.html#a1c86bd93fdb2bdd9fb7f447b242e40ec":[1,0,1,80,7],
 "dc/d4a/classtron_1_1SuperFrame.html#a2660d0e78349f49013a102e7f74a6199":[1,0,1,80,0],
@@ -245,9 +249,5 @@ var NAVTREEINDEX9 =
 "dd/d53/classtron_1_1Frame_1_1FrameInfoReqItem.html#ad8d848477a84a02e3951d9ed469a8659":[1,0,1,26,2,0],
 "dd/d53/classtron_1_1Frame_1_1FrameInfoReqItem.html#ad9a0b2831c81f67e042e06bfb059e55e":[1,0,1,26,2,5],
 "dd/d5a/classtron_1_1SatMac.html":[1,0,1,76],
-"dd/d5a/classtron_1_1SatMac.html#a032fa8107cabe94c14202b297ee5bd2e":[1,0,1,76,26],
-"dd/d5a/classtron_1_1SatMac.html#a05a55c0007cb37ddae7aa70b9d429624":[1,0,1,76,39],
-"dd/d5a/classtron_1_1SatMac.html#a05ac718880362d52b185784ddc41fb53":[1,0,1,76,60],
-"dd/d5a/classtron_1_1SatMac.html#a0793e52be33770d592dff31f47923ae3":[1,0,1,76,28],
-"dd/d5a/classtron_1_1SatMac.html#a09996c4f028d9fa337a64e7cb9612a80":[1,0,1,76,21]
+"dd/d5a/classtron_1_1SatMac.html#a032fa8107cabe94c14202b297ee5bd2e":[1,0,1,76,26]
 };
