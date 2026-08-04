@@ -22,7 +22,6 @@ var classtron_1_1UtMAC =
     [ "DrainQueueToRawQueue", "d9/d15/classtron_1_1UtMAC.html#ad008af698cd72c85fe671c8a6f258a29", null ],
     [ "Encap", "d9/d15/classtron_1_1UtMAC.html#a2345a5127983f51877c9c0d3120c2134", null ],
     [ "EncapTcPkt", "d9/d15/classtron_1_1UtMAC.html#a21e23c26a5d57629b7f6cb14368e1a81", null ],
-    [ "FetchPackets", "d9/d15/classtron_1_1UtMAC.html#a73a9ff9fcca7c44013875d64a21fb7ca", null ],
     [ "FindNextAvailableRandomAccessSlot", "d9/d15/classtron_1_1UtMAC.html#afa90c0e070c6fc875bd55b6e23a9a330", null ],
     [ "fixIp", "d9/d15/classtron_1_1UtMAC.html#a92976948005d4781eeba141b2a540f3b", null ],
     [ "FlushRawQueueImmediate", "d9/d15/classtron_1_1UtMAC.html#a35ec6b7055014f405e17599648926587", null ],

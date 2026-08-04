@@ -1,6 +1,5 @@
 var NAVTREEINDEX8 =
 {
-"da/da5/concurrentqueue_8h.html#aa76b694b726ac3e96d15d4930dd85cec":[2,0,0,12,63],
 "da/da5/concurrentqueue_8h.html#aaa826ee1631a720475bdc84bbb11878d":[2,0,0,12,49],
 "da/da5/concurrentqueue_8h.html#aaee723c4692dad14c94f34fee6e3640e":[2,0,0,12,51],
 "da/da5/concurrentqueue_8h.html#abc14de0c92989cd9ff0a461f52a2ffda":[2,0,0,12,43],
@@ -249,5 +248,6 @@ var NAVTREEINDEX8 =
 "dc/d39/waveform_8hpp.html":[2,0,0,133],
 "dc/d39/waveform_8hpp_source.html":[2,0,0,133],
 "dc/d4a/appInterface_8cpp.html":[2,0,0,2],
-"dc/d4a/appInterface_8cpp_source.html":[2,0,0,2]
+"dc/d4a/appInterface_8cpp_source.html":[2,0,0,2],
+"dc/d4a/classtron_1_1SuperFrame.html":[1,0,1,80]
 };
