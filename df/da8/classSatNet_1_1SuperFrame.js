@@ -1,0 +1,25 @@
+var classSatNet_1_1SuperFrame =
+[
+    [ "FrameContainer_t", "df/da8/classSatNet_1_1SuperFrame.html#aa21bfca2a14736d2a2405b453bdf702e", null ],
+    [ "SupportedFramesMap_t", "df/da8/classSatNet_1_1SuperFrame.html#a5cd90f8720e33c62caa8c8fde4a2a5b4", null ],
+    [ "SuperFrame", "df/da8/classSatNet_1_1SuperFrame.html#aef0558c84f6f31585354c4fa7b7f1058", null ],
+    [ "AllocateBasedOnCc", "df/da8/classSatNet_1_1SuperFrame.html#afa6a70bc621db14c7b8ea23cdaf9c973", null ],
+    [ "AllocateToFrame", "df/da8/classSatNet_1_1SuperFrame.html#a4de1a6009f045328815234215b05e991", null ],
+    [ "GenerateTimeSlots", "df/da8/classSatNet_1_1SuperFrame.html#a5318c7e31f861eee43c316e135f60aa3", null ],
+    [ "GetAllocatedFrameNum", "df/da8/classSatNet_1_1SuperFrame.html#ae11e145ff1a77cd5eb33858cc6567fc4", null ],
+    [ "GetFrame", "df/da8/classSatNet_1_1SuperFrame.html#a02b67ebce64b724f283c836d53b953d7", null ],
+    [ "GetSuperframeConf", "df/da8/classSatNet_1_1SuperFrame.html#aa3380d2374f1a418dbf562a93a21e11e", null ],
+    [ "PreAllocateSymbols", "df/da8/classSatNet_1_1SuperFrame.html#af08200558fcf46dbcc399ef3f711d762", null ],
+    [ "RemoveAllocations", "df/da8/classSatNet_1_1SuperFrame.html#a6beb2f6c474fc9607564ca3a8ce80934", null ],
+    [ "SetLog", "df/da8/classSatNet_1_1SuperFrame.html#ab5d3f543f468708c58a2e3f00161af52", null ],
+    [ "m_fcaEnabled", "df/da8/classSatNet_1_1SuperFrame.html#acc3cdfe76a95b8ddfecdeb431591eab0", null ],
+    [ "m_frames", "df/da8/classSatNet_1_1SuperFrame.html#a811c359abf7a876fc88ddfb14823a6c3", null ],
+    [ "m_log", "df/da8/classSatNet_1_1SuperFrame.html#a1caa01ecbc897f0bab3f27eeb5a4d342", null ],
+    [ "m_minCarrierPayloadInBytes", "df/da8/classSatNet_1_1SuperFrame.html#a68cac15128023ab510966c7ec76bb3a6", null ],
+    [ "m_minimumRateBasedBytesLeft", "df/da8/classSatNet_1_1SuperFrame.html#a1b613120f55f85085b48636fc0c0b026", null ],
+    [ "m_mostRobustSlotPayloadInBytes", "df/da8/classSatNet_1_1SuperFrame.html#a4a52fa010b5b5beae311168db23d2684", null ],
+    [ "m_rcBasedAllocationEnabled", "df/da8/classSatNet_1_1SuperFrame.html#a5accaba6eb191166d4c0f31e06509440", null ],
+    [ "m_superframeConf", "df/da8/classSatNet_1_1SuperFrame.html#aa5a24009603406d222be542b3dbb2820", null ],
+    [ "m_targetLoad", "df/da8/classSatNet_1_1SuperFrame.html#ae171e7425144e4850b104d1b0d8898ea", null ],
+    [ "m_totalBandwidth", "df/da8/classSatNet_1_1SuperFrame.html#a18a368d35b1445b13efed79971b15d27", null ]
+];

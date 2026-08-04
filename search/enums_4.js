@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['handoverpolicy_3664',['HandoverPolicy',['../d9/d65/classtron_1_1HandoverModule.html#a7904aeba1423d8c6fcf61885c2580fba',1,'tron::HandoverModule']]]
+  ['handoverpolicy_3664',['HandoverPolicy',['../d3/da5/classSatNet_1_1HandoverModule.html#aafc1d4bce7701a45562bd8c05863ac7b',1,'SatNet::HandoverModule']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['queueevent_3666',['QueueEvent',['../da/d95/classtron_1_1Queue.html#af324c69951eaea564517fec214348d39',1,'tron::Queue::QueueEvent()'],['../df/d3d/classtron_1_1QueueLockFree.html#ad7e65f579005d5b414fde08dab574176',1,'tron::QueueLockFree::QueueEvent()']]]
+  ['queueevent_3666',['QueueEvent',['../d0/d16/classSatNet_1_1Queue.html#af7c8ca91e9e5385dd7bea82ffba1fb4e',1,'SatNet::Queue::QueueEvent()'],['../db/df2/classSatNet_1_1QueueLockFree.html#ac1feb396058dc78b135e31b74b539ef6',1,'SatNet::QueueLockFree::QueueEvent()']]]
 ];

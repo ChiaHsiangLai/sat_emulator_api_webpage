@@ -1,0 +1,5 @@
+<map id="SatNet::HeartbeatMsg" name="SatNet::HeartbeatMsg">
+<area shape="rect" id="node1" title=" " alt="" coords="68,109,235,136"/>
+<area shape="rect" id="node2" href="$db/d13/classSatNet_1_1CtrlMsg.html" title=" " alt="" coords="5,13,129,39"/>
+<area shape="rect" id="node3" href="$de/ded/structSatNet_1_1HeartbeatMsg_1_1Data.html" title=" " alt="" coords="153,5,320,47"/>
+</map>

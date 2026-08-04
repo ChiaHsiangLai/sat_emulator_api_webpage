@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['waveform_2000',['Waveform',['../d7/d78/classtron_1_1Waveform.html',1,'tron']]],
-  ['waveformconf_2001',['WaveformConf',['../d7/d5b/classtron_1_1WaveformConf.html',1,'tron']]]
+  ['waveform_2000',['Waveform',['../d9/ddb/classSatNet_1_1Waveform.html',1,'SatNet']]],
+  ['waveformconf_2001',['WaveformConf',['../de/d57/classSatNet_1_1WaveformConf.html',1,'SatNet']]]
 ];

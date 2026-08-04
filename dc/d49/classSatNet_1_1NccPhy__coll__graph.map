@@ -1,0 +1,13 @@
+<map id="SatNet::NccPhy" name="SatNet::NccPhy">
+<area shape="rect" id="node1" title=" " alt="" coords="642,44,765,71"/>
+<area shape="rect" id="node4" href="$d2/dc8/classSatNet_1_1NccMac.html" title=" " alt="" coords="941,243,1067,269"/>
+<area shape="rect" id="node2" href="$de/d81/classSatNet_1_1SuperFrameConf.html" title=" " alt="" coords="200,64,383,91"/>
+<area shape="rect" id="node3" href="$dc/d08/classSatNet_1_1LOG.html" title=" " alt="" coords="5,347,107,373"/>
+<area shape="rect" id="node6" href="$db/d64/classSatNet_1_1NccCore.html" title=" " alt="" coords="639,216,767,243"/>
+<area shape="rect" id="node8" href="$d3/da5/classSatNet_1_1HandoverModule.html" title=" " alt="" coords="407,347,592,373"/>
+<area shape="rect" id="node9" href="$d1/dfa/classSatNet_1_1NccLlc.html" title=" " alt="" coords="233,405,349,432"/>
+<area shape="rect" id="node10" href="$de/d1b/classSatNet_1_1NccNetDev.html" title=" " alt="" coords="630,455,777,481"/>
+<area shape="rect" id="node11" href="$d3/db8/classSatNet_1_1PacketTracer.html" title=" " alt="" coords="422,551,577,577"/>
+<area shape="rect" id="node5" href="$d9/de5/classSatNet_1_1SocketManager.html" title=" " alt="" coords="616,165,791,192"/>
+<area shape="rect" id="node7" href="$d9/d27/classSatNet_1_1Address.html" title=" " alt="" coords="228,268,355,295"/>
+</map>

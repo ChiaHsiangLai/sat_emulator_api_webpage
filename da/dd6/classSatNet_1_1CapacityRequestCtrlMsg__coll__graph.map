@@ -1,0 +1,5 @@
+<map id="SatNet::CapacityRequestCtrlMsg" name="SatNet::CapacityRequestCtrlMsg">
+<area shape="rect" id="node1" title=" " alt="" coords="45,109,279,136"/>
+<area shape="rect" id="node2" href="$db/d13/classSatNet_1_1CtrlMsg.html" title=" " alt="" coords="5,13,129,39"/>
+<area shape="rect" id="node3" href="$d0/d02/structSatNet_1_1CapacityRequestCtrlMsg_1_1Data.html" title=" " alt="" coords="153,5,360,47"/>
+</map>

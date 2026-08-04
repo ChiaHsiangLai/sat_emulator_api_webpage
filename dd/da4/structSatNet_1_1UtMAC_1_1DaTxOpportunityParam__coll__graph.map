@@ -1,0 +1,4 @@
+<map id="SatNet::UtMAC::DaTxOpportunityParam" name="SatNet::UtMAC::DaTxOpportunityParam">
+<area shape="rect" id="node1" title="Parameters for one TBTP&#45;assigned (DAMA) TX burst on the return channel." alt="" coords="5,95,244,136"/>
+<area shape="rect" id="node2" href="$d9/ddb/classSatNet_1_1Waveform.html" title=" " alt="" coords="54,5,195,32"/>
+</map>

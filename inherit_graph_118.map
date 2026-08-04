@@ -1,12 +1,12 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$dc/d27/classtron_1_1Tag.html" title=" " alt="" coords="5,183,84,209"/>
-<area shape="rect" id="node2" href="$d1/de9/classtron_1_1AddrTag.html" title=" " alt="" coords="163,31,271,57"/>
-<area shape="rect" id="node5" href="$d2/dd3/classtron_1_1CtrlMsgTag.html" title=" " alt="" coords="153,81,281,108"/>
-<area shape="rect" id="node6" href="$dd/d14/classtron_1_1GroundStationTag.html" title=" " alt="" coords="132,132,303,159"/>
-<area shape="rect" id="node7" href="$d5/d2a/classtron_1_1PacketIdTag.html" title=" " alt="" coords="151,183,283,209"/>
-<area shape="rect" id="node8" href="$df/d05/classtron_1_1SegmentTag.html" title=" " alt="" coords="149,233,285,260"/>
-<area shape="rect" id="node9" href="$d8/d8a/classtron_1_1SendTimeTag.html" title=" " alt="" coords="146,284,289,311"/>
-<area shape="rect" id="node10" href="$dc/de7/classtron_1_1TrcTag.html" title=" " alt="" coords="169,335,265,361"/>
-<area shape="rect" id="node3" href="$d7/d0b/classtron_1_1E2EAddressTag.html" title=" " alt="" coords="352,5,507,32"/>
-<area shape="rect" id="node4" href="$d0/d2a/classtron_1_1MacAddressTag.html" title=" " alt="" coords="351,56,508,83"/>
+<area shape="rect" id="node1" href="$da/dc9/classSatNet_1_1Tag.html" title=" " alt="" coords="5,183,101,209"/>
+<area shape="rect" id="node2" href="$d7/dd2/classSatNet_1_1AddrTag.html" title=" " alt="" coords="181,31,307,57"/>
+<area shape="rect" id="node5" href="$d1/d12/classSatNet_1_1CtrlMsgTag.html" title=" " alt="" coords="171,81,317,108"/>
+<area shape="rect" id="node6" href="$de/d67/classSatNet_1_1GroundStationTag.html" title=" " alt="" coords="149,132,339,159"/>
+<area shape="rect" id="node7" href="$d9/d50/classSatNet_1_1PacketIdTag.html" title=" " alt="" coords="169,183,319,209"/>
+<area shape="rect" id="node8" href="$d4/d6d/classSatNet_1_1SegmentTag.html" title=" " alt="" coords="167,233,321,260"/>
+<area shape="rect" id="node9" href="$da/db7/classSatNet_1_1SendTimeTag.html" title=" " alt="" coords="163,284,325,311"/>
+<area shape="rect" id="node10" href="$d1/d25/classSatNet_1_1TrcTag.html" title=" " alt="" coords="187,335,301,361"/>
+<area shape="rect" id="node3" href="$d4/de7/classSatNet_1_1E2EAddressTag.html" title=" " alt="" coords="388,5,560,32"/>
+<area shape="rect" id="node4" href="$d8/de7/classSatNet_1_1MacAddressTag.html" title=" " alt="" coords="387,56,561,83"/>
 </map>

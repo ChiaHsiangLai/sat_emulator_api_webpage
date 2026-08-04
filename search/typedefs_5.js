@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['logonresponsedescriptor_5ft_3623',['LogonResponseDescriptor_t',['../de/dda/classtron_1_1LogonResponseCtrlMsg.html#a295e4acf4166580d03d8efbab4fc303b',1,'tron::LogonResponseCtrlMsg']]]
+  ['logonresponsedescriptor_5ft_3623',['LogonResponseDescriptor_t',['../df/dac/classSatNet_1_1LogonResponseCtrlMsg.html#a03f88bd711d561fa2506a761e0cf462c',1,'SatNet::LogonResponseCtrlMsg']]]
 ];

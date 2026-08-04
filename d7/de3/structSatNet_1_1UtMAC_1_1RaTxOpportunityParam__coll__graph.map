@@ -1,0 +1,4 @@
+<map id="SatNet::UtMAC::RaTxOpportunityParam" name="SatNet::UtMAC::RaTxOpportunityParam">
+<area shape="rect" id="node1" title="Parameters for one random&#45;access (slotted ALOHA) TX burst." alt="" coords="5,95,243,136"/>
+<area shape="rect" id="node2" href="$d9/ddb/classSatNet_1_1Waveform.html" title=" " alt="" coords="53,5,195,32"/>
+</map>

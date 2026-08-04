@@ -93,11 +93,11 @@ $(document).ready(function(){initNavTree('d6/de9/LooModel_8cpp_source.html','../
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">using namespace </span>std;</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../d1/db5/namespacetron.html">tron</a></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../da/d8c/namespaceSatNet.html">SatNet</a></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    </div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keywordtype">double</span> </div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="../../d2/d86/classtron_1_1LooFadingModel.html#aa380d6a48c32bf5218bd062ac5b73120">   12</a></span>&#160;LooFadingModel::GetFadingValue(<span class="keywordtype">double</span> <a class="code" href="../../dc/d05/namespaceGetSatPos.html#a7c56f116d21fe3f3f34aaf868645d143">t</a>)</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="../../d7/d37/classSatNet_1_1LooFadingModel.html#aba6d3b8f01b723897de57fed6620353d">   12</a></span>&#160;LooFadingModel::GetFadingValue(<span class="keywordtype">double</span> <a class="code" href="../../dc/d05/namespaceGetSatPos.html#a7c56f116d21fe3f3f34aaf868645d143">t</a>)</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    uniform_real_distribution&lt;double&gt; dist_u(0.0, 1.0);</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    normal_distribution&lt;double&gt; dist_n_los(m_params.mu_LOS, m_params.sigma_LOS);</div>
@@ -132,22 +132,22 @@ $(document).ready(function(){initNavTree('d6/de9/LooModel_8cpp_source.html','../
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        nlos_oscillators[n-1].omega = 2.0 * M_PI * m_params.f_NLOS * cos(alpha_n);</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    }</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="../../d2/d86/classtron_1_1LooFadingModel.html#ab983acaf66baf8090289ed68c686dcd0">Complex</a> h_LOS(0,0);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="../../d2/d86/classtron_1_1LooFadingModel.html#ab983acaf66baf8090289ed68c686dcd0">Complex</a> h_NLOS(0,0);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="../../d7/d37/classSatNet_1_1LooFadingModel.html#ad384b14a234ccc8cb9933911a505045d">Complex</a> h_LOS(0,0);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="../../d7/d37/classSatNet_1_1LooFadingModel.html#ad384b14a234ccc8cb9933911a505045d">Complex</a> h_NLOS(0,0);</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; osc : los_oscillators)</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    {</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keywordtype">double</span> phase = osc.omega * <a class="code" href="../../dc/d05/namespaceGetSatPos.html#a7c56f116d21fe3f3f34aaf868645d143">t</a> + phi_LOS;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        h_LOS += osc.A * exp(<a class="code" href="../../d2/d86/classtron_1_1LooFadingModel.html#ab983acaf66baf8090289ed68c686dcd0">Complex</a>(0, 1) * phase);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        h_LOS += osc.A * exp(<a class="code" href="../../d7/d37/classSatNet_1_1LooFadingModel.html#ad384b14a234ccc8cb9933911a505045d">Complex</a>(0, 1) * phase);</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    }</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; osc : nlos_oscillators)</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    {</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keywordtype">double</span> cos_val = cos(osc.omega * <a class="code" href="../../dc/d05/namespaceGetSatPos.html#a7c56f116d21fe3f3f34aaf868645d143">t</a> + phi_NLOS);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        h_NLOS += an * exp(<a class="code" href="../../d2/d86/classtron_1_1LooFadingModel.html#ab983acaf66baf8090289ed68c686dcd0">Complex</a>(0, 1) * osc.psi) * cos_val;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        h_NLOS += an * exp(<a class="code" href="../../d7/d37/classSatNet_1_1LooFadingModel.html#ad384b14a234ccc8cb9933911a505045d">Complex</a>(0, 1) * osc.psi) * cos_val;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    }</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <a class="code" href="../../d2/d86/classtron_1_1LooFadingModel.html#ab983acaf66baf8090289ed68c686dcd0">Complex</a> total = h_LOS + sigma_weight * h_NLOS;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <a class="code" href="../../d7/d37/classSatNet_1_1LooFadingModel.html#ad384b14a234ccc8cb9933911a505045d">Complex</a> total = h_LOS + sigma_weight * h_NLOS;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">double</span> h_Loo = abs(total); <span class="comment">// |h(t)|</span></div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordflow">return</span> h_Loo;</div>
@@ -156,9 +156,9 @@ $(document).ready(function(){initNavTree('d6/de9/LooModel_8cpp_source.html','../
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;};</div>
 <div class="ttc" id="aIncludes_8hpp_html"><div class="ttname"><a href="../../d5/db0/Includes_8hpp.html">Includes.hpp</a></div></div>
 <div class="ttc" id="aLooModel_8hpp_html"><div class="ttname"><a href="../../d8/d99/LooModel_8hpp.html">LooModel.hpp</a></div></div>
-<div class="ttc" id="aclasstron_1_1LooFadingModel_html_ab983acaf66baf8090289ed68c686dcd0"><div class="ttname"><a href="../../d2/d86/classtron_1_1LooFadingModel.html#ab983acaf66baf8090289ed68c686dcd0">tron::LooFadingModel::Complex</a></div><div class="ttdeci">complex&lt; double &gt; Complex</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d99/LooModel_8hpp_source.html#l00014">LooModel.hpp:14</a></div></div>
+<div class="ttc" id="aclassSatNet_1_1LooFadingModel_html_ad384b14a234ccc8cb9933911a505045d"><div class="ttname"><a href="../../d7/d37/classSatNet_1_1LooFadingModel.html#ad384b14a234ccc8cb9933911a505045d">SatNet::LooFadingModel::Complex</a></div><div class="ttdeci">complex&lt; double &gt; Complex</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d99/LooModel_8hpp_source.html#l00014">LooModel.hpp:14</a></div></div>
 <div class="ttc" id="anamespaceGetSatPos_html_a7c56f116d21fe3f3f34aaf868645d143"><div class="ttname"><a href="../../dc/d05/namespaceGetSatPos.html#a7c56f116d21fe3f3f34aaf868645d143">GetSatPos.t</a></div><div class="ttdeci">t</div><div class="ttdef"><b>Definition:</b> <a href="../../db/da2/GetSatPos_8py_source.html#l00061">GetSatPos.py:61</a></div></div>
-<div class="ttc" id="anamespacetron_html"><div class="ttname"><a href="../../d1/db5/namespacetron.html">tron</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d0d/address_8cpp_source.html#l00006">address.cpp:7</a></div></div>
+<div class="ttc" id="anamespaceSatNet_html"><div class="ttname"><a href="../../da/d8c/namespaceSatNet.html">SatNet</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d0d/address_8cpp_source.html#l00006">address.cpp:7</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

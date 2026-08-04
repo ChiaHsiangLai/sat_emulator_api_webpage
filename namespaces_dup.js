@@ -128,11 +128,11 @@ var namespaces_dup =
       [ "TLE_SOURCE_INFO", "df/df8/namespacesatMobility.html#a12f374670e1bcdf8b675379f731affb7", null ],
       [ "ts", "df/df8/namespacesatMobility.html#a7802ef78d9980db2c3a80f48123b02ff", null ]
     ] ],
+    [ "SatNet", "da/d8c/namespaceSatNet.html", "da/d8c/namespaceSatNet" ],
     [ "SerializerUtils", "dd/da8/namespaceSerializerUtils.html", [
       [ "Read", "dd/da8/namespaceSerializerUtils.html#aebfa9a151d5b39ecac3a93952ff6e535", null ],
       [ "ReadString", "dd/da8/namespaceSerializerUtils.html#aedd6ab58413f976c0b547058d4dfabfe", null ],
       [ "Write", "dd/da8/namespaceSerializerUtils.html#a32ef69f31c429e77db2fcd4430b3ddf3", null ],
       [ "WriteString", "dd/da8/namespaceSerializerUtils.html#ab3a114bee69f71d491dfc42964f7e760", null ]
-    ] ],
-    [ "tron", "d1/db5/namespacetron.html", "d1/db5/namespacetron" ]
+    ] ]
 ];
