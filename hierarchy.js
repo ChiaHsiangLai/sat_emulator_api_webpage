@@ -91,6 +91,10 @@ var hierarchy =
     [ "SatNet::GwRoutingInfo", "d1/d06/structSatNet_1_1GwRoutingInfo.html", null ],
     [ "SatNet::HandoverModule", "d3/da5/classSatNet_1_1HandoverModule.html", null ],
     [ "moodycamel::details::identity< T >", "da/def/structmoodycamel_1_1details_1_1identity.html", null ],
+    [ "SatNet::ILog", "d9/dd0/classSatNet_1_1ILog.html", [
+      [ "SatNet::LOG", "dc/d08/classSatNet_1_1LOG.html", null ],
+      [ "SatNet::SyncLog", "de/d3c/classSatNet_1_1SyncLog.html", null ]
+    ] ],
     [ "moodycamel::ConcurrentQueue< T, Traits >::ImplicitProducerHash", "d8/d1f/structmoodycamel_1_1ConcurrentQueue_1_1ImplicitProducerHash.html", null ],
     [ "moodycamel::ConcurrentQueue< T, Traits >::ImplicitProducerKVP", "d3/dde/structmoodycamel_1_1ConcurrentQueue_1_1ImplicitProducerKVP.html", null ],
     [ "std::is_trivially_destructible", null, [
@@ -98,7 +102,6 @@ var hierarchy =
     ] ],
     [ "SatNet::TxScheduler::Item", "d7/d92/structSatNet_1_1TxScheduler_1_1Item.html", null ],
     [ "SatNet::LinkManagement", "d3/d4a/classSatNet_1_1LinkManagement.html", null ],
-    [ "SatNet::LOG", "dc/d08/classSatNet_1_1LOG.html", null ],
     [ "SatNet::LooFadingModel", "d7/d37/classSatNet_1_1LooFadingModel.html", null ],
     [ "SatNet::LooFadingModel::LooParams", "d4/d60/structSatNet_1_1LooFadingModel_1_1LooParams.html", null ],
     [ "SatNet::LowerLayerService", "df/d50/classSatNet_1_1LowerLayerService.html", null ],

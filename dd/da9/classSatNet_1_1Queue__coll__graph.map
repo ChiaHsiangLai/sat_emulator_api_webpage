@@ -1,4 +1,5 @@
 <map id="SatNet::Queue" name="SatNet::Queue">
-<area shape="rect" id="node1" title=" " alt="" coords="5,95,121,121"/>
-<area shape="rect" id="node2" href="$dc/d08/classSatNet_1_1LOG.html" title=" " alt="" coords="13,5,114,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,171,121,197"/>
+<area shape="rect" id="node2" href="$dc/d08/classSatNet_1_1LOG.html" title=" " alt="" coords="13,81,114,108"/>
+<area shape="rect" id="node3" href="$d9/dd0/classSatNet_1_1ILog.html" title=" " alt="" coords="13,5,114,32"/>
 </map>

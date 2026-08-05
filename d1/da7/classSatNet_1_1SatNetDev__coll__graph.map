@@ -1,6 +1,7 @@
 <map id="SatNet::SatNetDev" name="SatNet::SatNetDev">
-<area shape="rect" id="node1" title=" " alt="" coords="124,95,268,121"/>
-<area shape="rect" id="node3" href="$d6/d5e/classSatNet_1_1SatLlc.html" title=" " alt="" coords="69,184,182,211"/>
-<area shape="rect" id="node2" href="$dc/d08/classSatNet_1_1LOG.html" title=" " alt="" coords="5,5,107,32"/>
-<area shape="rect" id="node4" href="$d9/d27/classSatNet_1_1Address.html" title=" " alt="" coords="133,5,259,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="124,171,268,197"/>
+<area shape="rect" id="node4" href="$d6/d5e/classSatNet_1_1SatLlc.html" title=" " alt="" coords="69,260,182,287"/>
+<area shape="rect" id="node2" href="$dc/d08/classSatNet_1_1LOG.html" title=" " alt="" coords="5,81,107,108"/>
+<area shape="rect" id="node3" href="$d9/dd0/classSatNet_1_1ILog.html" title=" " alt="" coords="5,5,107,32"/>
+<area shape="rect" id="node5" href="$d9/d27/classSatNet_1_1Address.html" title=" " alt="" coords="133,81,259,108"/>
 </map>

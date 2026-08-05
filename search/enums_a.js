@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['waveformburstlength_3676',['WaveFormBurstLength',['../da/d8c/namespaceSatNet.html#a929bd3e90d6bd21e19d32aabde30c878',1,'SatNet']]]
+  ['waveformburstlength_3698',['WaveFormBurstLength',['../da/d8c/namespaceSatNet.html#a929bd3e90d6bd21e19d32aabde30c878',1,'SatNet']]]
 ];

@@ -135,6 +135,14 @@ var dir_3f14f6767c31cb4a1d22c13c18cc6fc3 =
     [ "log.hpp", "d4/d3d/log_8hpp.html", [
       [ "LOG", "dc/d08/classSatNet_1_1LOG.html", "dc/d08/classSatNet_1_1LOG" ]
     ] ],
+    [ "logFactory.hpp", "d4/d5b/logFactory_8hpp.html", "d4/d5b/logFactory_8hpp" ],
+    [ "logInterface.hpp", "de/d93/logInterface_8hpp.html", [
+      [ "ILog", "d9/dd0/classSatNet_1_1ILog.html", "d9/dd0/classSatNet_1_1ILog" ]
+    ] ],
+    [ "logSync.cpp", "d0/dd4/logSync_8cpp.html", null ],
+    [ "logSync.hpp", "d8/d70/logSync_8hpp.html", [
+      [ "SyncLog", "de/d3c/classSatNet_1_1SyncLog.html", "de/d3c/classSatNet_1_1SyncLog" ]
+    ] ],
     [ "LooModel.cpp", "d6/de9/LooModel_8cpp.html", null ],
     [ "LooModel.hpp", "d8/d99/LooModel_8hpp.html", [
       [ "LooFadingModel", "d7/d37/classSatNet_1_1LooFadingModel.html", "d7/d37/classSatNet_1_1LooFadingModel" ],

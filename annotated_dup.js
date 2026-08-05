@@ -68,6 +68,8 @@ var annotated_dup =
       [ "HandoverModule", "d3/da5/classSatNet_1_1HandoverModule.html", "d3/da5/classSatNet_1_1HandoverModule" ],
       [ "LinkManagement", "d3/d4a/classSatNet_1_1LinkManagement.html", "d3/d4a/classSatNet_1_1LinkManagement" ],
       [ "LOG", "dc/d08/classSatNet_1_1LOG.html", "dc/d08/classSatNet_1_1LOG" ],
+      [ "ILog", "d9/dd0/classSatNet_1_1ILog.html", "d9/dd0/classSatNet_1_1ILog" ],
+      [ "SyncLog", "de/d3c/classSatNet_1_1SyncLog.html", "de/d3c/classSatNet_1_1SyncLog" ],
       [ "LooFadingModel", "d7/d37/classSatNet_1_1LooFadingModel.html", "d7/d37/classSatNet_1_1LooFadingModel" ],
       [ "LowerLayerService", "df/d50/classSatNet_1_1LowerLayerService.html", "df/d50/classSatNet_1_1LowerLayerService" ],
       [ "MobilityModel", "d2/d7d/classSatNet_1_1MobilityModel.html", "d2/d7d/classSatNet_1_1MobilityModel" ],

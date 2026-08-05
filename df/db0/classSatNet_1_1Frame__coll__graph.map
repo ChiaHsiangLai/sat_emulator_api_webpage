@@ -1,7 +1,8 @@
 <map id="SatNet::Frame" name="SatNet::Frame">
 <area shape="rect" id="node1" title=" " alt="" coords="163,184,277,211"/>
 <area shape="rect" id="node2" href="$dc/d08/classSatNet_1_1LOG.html" title=" " alt="" coords="5,95,107,121"/>
-<area shape="rect" id="node3" href="$d8/da6/classSatNet_1_1FrameConf.html" title=" " alt="" coords="301,95,446,121"/>
-<area shape="rect" id="node4" href="$de/d57/classSatNet_1_1WaveformConf.html" title=" " alt="" coords="91,5,261,32"/>
-<area shape="rect" id="node5" href="$d9/ddb/classSatNet_1_1Waveform.html" title=" " alt="" coords="471,95,612,121"/>
+<area shape="rect" id="node3" href="$d9/dd0/classSatNet_1_1ILog.html" title=" " alt="" coords="5,5,107,32"/>
+<area shape="rect" id="node4" href="$d8/da6/classSatNet_1_1FrameConf.html" title=" " alt="" coords="301,95,446,121"/>
+<area shape="rect" id="node5" href="$de/d57/classSatNet_1_1WaveformConf.html" title=" " alt="" coords="209,5,380,32"/>
+<area shape="rect" id="node6" href="$d9/ddb/classSatNet_1_1Waveform.html" title=" " alt="" coords="471,95,612,121"/>
 </map>
