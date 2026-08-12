@@ -137,181 +137,188 @@ $(document).ready(function(){initNavTree('d9/db8/log_8cpp_source.html','../../')
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    }</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;}</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="../../dc/d08/classSatNet_1_1LOG.html#a323293d0656e10044967663cded9cea5">   52</a></span>&#160;<a class="code" href="../../dc/d08/classSatNet_1_1LOG.html#a323293d0656e10044967663cded9cea5">LOG::LOG</a>(){}</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="../../dc/d08/classSatNet_1_1LOG.html#a4694bb34d4baaf0c817ef2fbe9d248ff">   54</a></span>&#160;<a class="code" href="../../dc/d08/classSatNet_1_1LOG.html#a323293d0656e10044967663cded9cea5">LOG::LOG</a>(std::string filePath, std::string name, <span class="keywordtype">bool</span> logEnabled, <span class="keywordtype">bool</span> flushOnWrite):</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;m_filePath(filePath),</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;m_fileName(name),</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;m_fileMutexMap(),</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;m_logEnabled(logEnabled),</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;m_flushOnWrite(flushOnWrite)</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;{</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <a class="code" href="../../dc/d08/classSatNet_1_1LOG.html#a4683ed2f7ee84d02edbee807553b6c97">m_fileMutexMap</a>.clear();</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <a class="code" href="../../dc/d08/classSatNet_1_1LOG.html#ae8e87e8efe24479cc914aebf7fc021d2">CheckFileExist</a>(<a class="code" href="../../dc/d08/classSatNet_1_1LOG.html#aba182d1121a9bea8948d107cff14745f">m_filePath</a>,<a class="code" href="../../dc/d08/classSatNet_1_1LOG.html#a9b39be789433e6a29de7830267046e01">m_fileName</a>,<span class="keyword">true</span>);</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;}</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keywordtype">void</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="../../dc/d08/classSatNet_1_1LOG.html#ae8e87e8efe24479cc914aebf7fc021d2">   66</a></span>&#160;<a class="code" href="../../dc/d08/classSatNet_1_1LOG.html#ae8e87e8efe24479cc914aebf7fc021d2">LOG::CheckFileExist</a>(std::string filePath, std::string name, <span class="keywordtype">bool</span> erase)</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment">// m_logEnabled/m_flushOnWrite have no member-initializer defaults in the</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment">// header, so without this list they&#39;d be left as uninitialized garbage --</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment">// matching the &quot;disabled/uninitialized&quot; comment on the declaration by</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment">// making the disabled part explicit rather than accidental.</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="../../dc/d08/classSatNet_1_1LOG.html#a323293d0656e10044967663cded9cea5">   56</a></span>&#160;<a class="code" href="../../dc/d08/classSatNet_1_1LOG.html#a323293d0656e10044967663cded9cea5">LOG::LOG</a>():</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;m_logEnabled(false),</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;m_flushOnWrite(false)</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;{}</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="../../dc/d08/classSatNet_1_1LOG.html#a4694bb34d4baaf0c817ef2fbe9d248ff">   61</a></span>&#160;<a class="code" href="../../dc/d08/classSatNet_1_1LOG.html#a323293d0656e10044967663cded9cea5">LOG::LOG</a>(std::string filePath, std::string name, <span class="keywordtype">bool</span> logEnabled, <span class="keywordtype">bool</span> flushOnWrite):</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;m_filePath(filePath),</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;m_fileName(name),</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;m_fileMutexMap(),</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;m_logEnabled(logEnabled),</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;m_flushOnWrite(flushOnWrite)</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;{</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordflow">if</span> (!fs::exists(filePath))</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    {</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot;Folder not exists: &quot;</span> &lt;&lt; filePath &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <a class="code" href="../../dc/d08/classSatNet_1_1LOG.html#a4683ed2f7ee84d02edbee807553b6c97">m_fileMutexMap</a>.clear();</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <a class="code" href="../../dc/d08/classSatNet_1_1LOG.html#ae8e87e8efe24479cc914aebf7fc021d2">CheckFileExist</a>(<a class="code" href="../../dc/d08/classSatNet_1_1LOG.html#aba182d1121a9bea8948d107cff14745f">m_filePath</a>,<a class="code" href="../../dc/d08/classSatNet_1_1LOG.html#a9b39be789433e6a29de7830267046e01">m_fileName</a>,<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;}</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="keywordflow">if</span> (fs::create_directories(filePath))</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        {</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            std::cout &lt;&lt; <span class="stringliteral">&quot;Folder created: &quot;</span> &lt;&lt; filePath &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        }</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        {</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            std::cerr &lt;&lt; <span class="stringliteral">&quot;Failed to create folder: &quot;</span> &lt;&lt; filePath &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        }</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    }</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    std::string fullPath = filePath + name;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordflow">if</span> (!fs::exists(fullPath))</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    {</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        std::ofstream outFile(fullPath, std::ios::trunc);</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <span class="keywordflow">if</span> (outFile)</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        {</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            std::cout &lt;&lt; <span class="stringliteral">&quot;File created: &quot;</span> &lt;&lt; fullPath &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        }</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        {</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            std::cerr &lt;&lt; <span class="stringliteral">&quot;Failed to create file: &quot;</span> &lt;&lt; fullPath &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        }</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    }</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    {</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <span class="keywordflow">if</span> (erase)</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="keywordtype">void</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="../../dc/d08/classSatNet_1_1LOG.html#ae8e87e8efe24479cc914aebf7fc021d2">   73</a></span>&#160;<a class="code" href="../../dc/d08/classSatNet_1_1LOG.html#ae8e87e8efe24479cc914aebf7fc021d2">LOG::CheckFileExist</a>(std::string filePath, std::string name, <span class="keywordtype">bool</span> erase)</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;{</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordflow">if</span> (!fs::exists(filePath))</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    {</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot;Folder not exists: &quot;</span> &lt;&lt; filePath &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="keywordflow">if</span> (fs::create_directories(filePath))</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        {</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            std::cout &lt;&lt; <span class="stringliteral">&quot;Folder created: &quot;</span> &lt;&lt; filePath &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        }</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        {</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            std::cerr &lt;&lt; <span class="stringliteral">&quot;Failed to create folder: &quot;</span> &lt;&lt; filePath &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        }</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    }</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    std::string fullPath = filePath + name;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordflow">if</span> (!fs::exists(fullPath))</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    {</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        std::ofstream outFile(fullPath, std::ios::trunc);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <span class="keywordflow">if</span> (outFile)</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        {</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            std::cout &lt;&lt; <span class="stringliteral">&quot;File created: &quot;</span> &lt;&lt; fullPath &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        }</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        {</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            std::ofstream file(fullPath, std::ios::trunc);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            std::cerr &lt;&lt; <span class="stringliteral">&quot;Failed to create file: &quot;</span> &lt;&lt; fullPath &lt;&lt; std::endl;</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        }</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    }</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;}</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;std::shared_ptr&lt;spdlog::logger&gt;</div>
-<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="../../dc/d08/classSatNet_1_1LOG.html#ac903c8202db891170d024373861dd5d2">  106</a></span>&#160;<a class="code" href="../../dc/d08/classSatNet_1_1LOG.html#ac903c8202db891170d024373861dd5d2">LOG::GetLogger</a>(<span class="keyword">const</span> std::string&amp; fpath, <span class="keyword">const</span> std::string&amp; name)</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;{</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    std::string fullPath = fpath + name;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    std::lock_guard&lt;std::mutex&gt; lock(<a class="code" href="../../dc/d08/classSatNet_1_1LOG.html#aaeb7156dede21bf0ba56a3c1938ff477">m_mapMutex</a>);</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keyword">auto</span> it = <a class="code" href="../../dc/d08/classSatNet_1_1LOG.html#a7079f0d531a7699248d3b5e8a9ef5868">m_loggerMap</a>.find(fullPath);</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keywordflow">if</span> (it != <a class="code" href="../../dc/d08/classSatNet_1_1LOG.html#a7079f0d531a7699248d3b5e8a9ef5868">m_loggerMap</a>.end())</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        <span class="keywordflow">return</span> it-&gt;second;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="comment">// First use of this path: spdlog&#39;s file sink will create the file itself,</span></div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="comment">// but not its parent directory.</span></div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordflow">if</span> (!fs::exists(fpath))</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    {</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        fs::create_directories(fpath);</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    }</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    {</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        <span class="keywordflow">if</span> (erase)</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        {</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            std::ofstream file(fullPath, std::ios::trunc);</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        }</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    }</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;}</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;std::shared_ptr&lt;spdlog::logger&gt;</div>
+<div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="../../dc/d08/classSatNet_1_1LOG.html#ac903c8202db891170d024373861dd5d2">  113</a></span>&#160;<a class="code" href="../../dc/d08/classSatNet_1_1LOG.html#ac903c8202db891170d024373861dd5d2">LOG::GetLogger</a>(<span class="keyword">const</span> std::string&amp; fpath, <span class="keyword">const</span> std::string&amp; name)</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;{</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    std::string fullPath = fpath + name;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    std::lock_guard&lt;std::mutex&gt; lock(<a class="code" href="../../dc/d08/classSatNet_1_1LOG.html#aaeb7156dede21bf0ba56a3c1938ff477">m_mapMutex</a>);</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keyword">auto</span> it = <a class="code" href="../../dc/d08/classSatNet_1_1LOG.html#a7079f0d531a7699248d3b5e8a9ef5868">m_loggerMap</a>.find(fullPath);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keywordflow">if</span> (it != <a class="code" href="../../dc/d08/classSatNet_1_1LOG.html#a7079f0d531a7699248d3b5e8a9ef5868">m_loggerMap</a>.end())</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <span class="keywordflow">return</span> it-&gt;second;</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    EnsureThreadPoolInitialized();</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="comment">// spdlog keeps a process-wide registry keyed by name; check it first so a</span></div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="comment">// second LOG instance targeting the same path reuses the existing logger</span></div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="comment">// instead of throwing on a duplicate registration.</span></div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    std::shared_ptr&lt;spdlog::logger&gt; logger = spdlog::get(fullPath);</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="keywordflow">if</span> (!logger)</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    {</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        <span class="comment">// create_async_nb (overrun_oldest), not create_async (block): if the</span></div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        <span class="comment">// shared queue is ever momentarily full, drop the oldest buffered</span></div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        <span class="comment">// line instead of blocking this call&#39;s caller. Blocking here is what</span></div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        <span class="comment">// caused the real stall this fix addresses -- see</span></div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        <span class="comment">// EnsureThreadPoolInitialized() above for the full explanation.</span></div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        <span class="comment">// Losing an occasional line under a genuine burst is an acceptable</span></div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        <span class="comment">// trade against a logger silently never writing again.</span></div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        logger = spdlog::create_async_nb&lt;spdlog::sinks::basic_file_sink_mt&gt;(fullPath, fullPath, <span class="comment">/*truncate=*/</span><span class="keyword">false</span>);</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        <span class="comment">// Raw message only: callers pre-format their own &quot;[Y-m-d H:M:S.mmm] ...&quot;</span></div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        <span class="comment">// timestamp, so this keeps the on-disk format identical to before</span></div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        <span class="comment">// spdlog was introduced.</span></div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;        logger-&gt;set_pattern(<span class="stringliteral">&quot;%v&quot;</span>);</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    }</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160; </div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    <span class="comment">// spdlog&#39;s basic_file_sink uses a buffered std::ofstream.  A low-rate</span></div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    <span class="comment">// statistic file may never fill that buffer before the runner ends by</span></div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    <span class="comment">// SIGKILL, leaving it visibly truncated at exactly 4096 bytes.  Request</span></div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    <span class="comment">// a flush for those files while preserving batched async I/O for the</span></div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    <span class="comment">// high-frequency protocol logs.</span></div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../dc/d08/classSatNet_1_1LOG.html#a02b05fe4ce1cd18256731f7560bef1ba">m_flushOnWrite</a>)</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        logger-&gt;flush_on(spdlog::level::info);</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160; </div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <a class="code" href="../../dc/d08/classSatNet_1_1LOG.html#a7079f0d531a7699248d3b5e8a9ef5868">m_loggerMap</a>[fullPath] = logger;</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <span class="keywordflow">return</span> logger;</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;}</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160; </div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<span class="keywordtype">void</span></div>
-<div class="line"><a name="l00157"></a><span class="lineno"><a class="line" href="../../dc/d08/classSatNet_1_1LOG.html#aee148a8431535cf8da2aa7f0d2147f2c">  157</a></span>&#160;<a class="code" href="../../dc/d08/classSatNet_1_1LOG.html#aee148a8431535cf8da2aa7f0d2147f2c">LOG::WriteToFile</a>(std::string oss)</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;{</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <span class="keywordflow">if</span>(!<a class="code" href="../../dc/d08/classSatNet_1_1LOG.html#a2e039af85cdcf0f7eaa350abddb4d1e1">m_logEnabled</a>) <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160; </div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    std::string time = <a class="code" href="../../dd/d48/classSatNet_1_1Time.html#a514e5fd80235cd98fefa23403a420398">Time::Print</a>(<a class="code" href="../../dd/d48/classSatNet_1_1Time.html#a8f534313c9c5fb24c239be7423706aab">Time::Now</a>());</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    <a class="code" href="../../dc/d08/classSatNet_1_1LOG.html#ac903c8202db891170d024373861dd5d2">GetLogger</a>(<a class="code" href="../../dc/d08/classSatNet_1_1LOG.html#aba182d1121a9bea8948d107cff14745f">m_filePath</a>, <a class="code" href="../../dc/d08/classSatNet_1_1LOG.html#a9b39be789433e6a29de7830267046e01">m_fileName</a>)-&gt;info(<span class="stringliteral">&quot;[{}] {}&quot;</span>, time, StripTrailingNewline(oss));</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;}</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160; </div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;<span class="keywordtype">void</span></div>
-<div class="line"><a name="l00166"></a><span class="lineno"><a class="line" href="../../dc/d08/classSatNet_1_1LOG.html#ac54ec0a16a70a5efa879398b99cc483d">  166</a></span>&#160;<a class="code" href="../../dc/d08/classSatNet_1_1LOG.html#ac54ec0a16a70a5efa879398b99cc483d">LOG::WriteToFileWithoutTime</a>(std::string oss)</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;{</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <span class="keywordflow">if</span>(!<a class="code" href="../../dc/d08/classSatNet_1_1LOG.html#a2e039af85cdcf0f7eaa350abddb4d1e1">m_logEnabled</a>) <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160; </div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    <a class="code" href="../../dc/d08/classSatNet_1_1LOG.html#ac903c8202db891170d024373861dd5d2">GetLogger</a>(<a class="code" href="../../dc/d08/classSatNet_1_1LOG.html#aba182d1121a9bea8948d107cff14745f">m_filePath</a>, <a class="code" href="../../dc/d08/classSatNet_1_1LOG.html#a9b39be789433e6a29de7830267046e01">m_fileName</a>)-&gt;info(<span class="stringliteral">&quot;{}&quot;</span>, StripTrailingNewline(oss));</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;}</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160; </div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;<span class="keywordtype">void</span></div>
-<div class="line"><a name="l00174"></a><span class="lineno"><a class="line" href="../../dc/d08/classSatNet_1_1LOG.html#a3aadf74cbfa00e51a174708ae2821b22">  174</a></span>&#160;<a class="code" href="../../dc/d08/classSatNet_1_1LOG.html#a3aadf74cbfa00e51a174708ae2821b22">LOG::CleanAndWrite</a>(std::string oss)</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;{</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    <span class="keywordflow">if</span>(!<a class="code" href="../../dc/d08/classSatNet_1_1LOG.html#a2e039af85cdcf0f7eaa350abddb4d1e1">m_logEnabled</a>) <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160; </div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    <a class="code" href="../../dc/d08/classSatNet_1_1LOG.html#ae8e87e8efe24479cc914aebf7fc021d2">CheckFileExist</a>(<a class="code" href="../../dc/d08/classSatNet_1_1LOG.html#aba182d1121a9bea8948d107cff14745f">m_filePath</a>,<a class="code" href="../../dc/d08/classSatNet_1_1LOG.html#a9b39be789433e6a29de7830267046e01">m_fileName</a>,<span class="keyword">true</span>);</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    </div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    <span class="comment">// lock log file</span></div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    std::lock_guard&lt;std::mutex&gt; lock(<a class="code" href="../../dc/d08/classSatNet_1_1LOG.html#aef78fb231f48ca2d4de545a35717d6a7">GetFileMutex</a>(<a class="code" href="../../dc/d08/classSatNet_1_1LOG.html#aba182d1121a9bea8948d107cff14745f">m_filePath</a> + <a class="code" href="../../dc/d08/classSatNet_1_1LOG.html#a9b39be789433e6a29de7830267046e01">m_fileName</a>));</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160; </div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    std::ofstream file(<a class="code" href="../../dc/d08/classSatNet_1_1LOG.html#aba182d1121a9bea8948d107cff14745f">m_filePath</a> + <a class="code" href="../../dc/d08/classSatNet_1_1LOG.html#a9b39be789433e6a29de7830267046e01">m_fileName</a>, std::ios::trunc);</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    file &lt;&lt; oss;</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;}</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160; </div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;<span class="keywordtype">void</span></div>
-<div class="line"><a name="l00188"></a><span class="lineno"><a class="line" href="../../dc/d08/classSatNet_1_1LOG.html#a514e923b26c3916cdb13bf1eef4bf6e3">  188</a></span>&#160;<a class="code" href="../../dc/d08/classSatNet_1_1LOG.html#aee148a8431535cf8da2aa7f0d2147f2c">LOG::WriteToFile</a>(std::string oss, std::string fpath, std::string name) <span class="comment">// with file context</span></div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;{</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    <span class="keywordflow">if</span>(!<a class="code" href="../../dc/d08/classSatNet_1_1LOG.html#a2e039af85cdcf0f7eaa350abddb4d1e1">m_logEnabled</a>) <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160; </div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    <span class="comment">// Unlike the default-file overload, this one never prepended a timestamp --</span></div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    <span class="comment">// most of its callers write raw &quot;&lt;time&gt; &lt;value&gt;&quot; data lines (e.g. tsAllocKbps)</span></div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    <span class="comment">// where the timestamp is already part of oss itself.</span></div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    <a class="code" href="../../dc/d08/classSatNet_1_1LOG.html#ac903c8202db891170d024373861dd5d2">GetLogger</a>(fpath, name)-&gt;info(<span class="stringliteral">&quot;{}&quot;</span>, StripTrailingNewline(oss));</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;}</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160; </div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;<span class="keywordtype">void</span></div>
-<div class="line"><a name="l00199"></a><span class="lineno"><a class="line" href="../../dc/d08/classSatNet_1_1LOG.html#aaee74a4bde7cc98e0b0fc98a91cf1f56">  199</a></span>&#160;<a class="code" href="../../dc/d08/classSatNet_1_1LOG.html#a3aadf74cbfa00e51a174708ae2821b22">LOG::CleanAndWrite</a>(std::string oss, std::string fpath, std::string name) <span class="comment">// with file context</span></div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;{</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    <span class="keywordflow">if</span>(!<a class="code" href="../../dc/d08/classSatNet_1_1LOG.html#a2e039af85cdcf0f7eaa350abddb4d1e1">m_logEnabled</a>) <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    </div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    <a class="code" href="../../dc/d08/classSatNet_1_1LOG.html#ae8e87e8efe24479cc914aebf7fc021d2">CheckFileExist</a>(fpath,name,<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="comment">// First use of this path: spdlog&#39;s file sink will create the file itself,</span></div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="comment">// but not its parent directory.</span></div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keywordflow">if</span> (!fs::exists(fpath))</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    {</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        fs::create_directories(fpath);</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    }</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    EnsureThreadPoolInitialized();</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160; </div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="comment">// spdlog keeps a process-wide registry keyed by name; check it first so a</span></div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="comment">// second LOG instance targeting the same path reuses the existing logger</span></div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="comment">// instead of throwing on a duplicate registration.</span></div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    std::shared_ptr&lt;spdlog::logger&gt; logger = spdlog::get(fullPath);</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="keywordflow">if</span> (!logger)</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    {</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        <span class="comment">// create_async_nb (overrun_oldest), not create_async (block): if the</span></div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        <span class="comment">// shared queue is ever momentarily full, drop the oldest buffered</span></div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        <span class="comment">// line instead of blocking this call&#39;s caller. Blocking here is what</span></div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        <span class="comment">// caused the real stall this fix addresses -- see</span></div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;        <span class="comment">// EnsureThreadPoolInitialized() above for the full explanation.</span></div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        <span class="comment">// Losing an occasional line under a genuine burst is an acceptable</span></div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        <span class="comment">// trade against a logger silently never writing again.</span></div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        logger = spdlog::create_async_nb&lt;spdlog::sinks::basic_file_sink_mt&gt;(fullPath, fullPath, <span class="comment">/*truncate=*/</span><span class="keyword">false</span>);</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        <span class="comment">// Raw message only: callers pre-format their own &quot;[Y-m-d H:M:S.mmm] ...&quot;</span></div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        <span class="comment">// timestamp, so this keeps the on-disk format identical to before</span></div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        <span class="comment">// spdlog was introduced.</span></div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        logger-&gt;set_pattern(<span class="stringliteral">&quot;%v&quot;</span>);</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    }</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160; </div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    <span class="comment">// spdlog&#39;s basic_file_sink uses a buffered std::ofstream.  A low-rate</span></div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <span class="comment">// statistic file may never fill that buffer before the runner ends by</span></div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <span class="comment">// SIGKILL, leaving it visibly truncated at exactly 4096 bytes.  Request</span></div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <span class="comment">// a flush for those files while preserving batched async I/O for the</span></div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <span class="comment">// high-frequency protocol logs.</span></div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../dc/d08/classSatNet_1_1LOG.html#a02b05fe4ce1cd18256731f7560bef1ba">m_flushOnWrite</a>)</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        logger-&gt;flush_on(spdlog::level::info);</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160; </div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <a class="code" href="../../dc/d08/classSatNet_1_1LOG.html#a7079f0d531a7699248d3b5e8a9ef5868">m_loggerMap</a>[fullPath] = logger;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <span class="keywordflow">return</span> logger;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;}</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160; </div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;<span class="keywordtype">void</span></div>
+<div class="line"><a name="l00164"></a><span class="lineno"><a class="line" href="../../dc/d08/classSatNet_1_1LOG.html#aee148a8431535cf8da2aa7f0d2147f2c">  164</a></span>&#160;<a class="code" href="../../dc/d08/classSatNet_1_1LOG.html#aee148a8431535cf8da2aa7f0d2147f2c">LOG::WriteToFile</a>(std::string oss)</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;{</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    <span class="keywordflow">if</span>(!<a class="code" href="../../dc/d08/classSatNet_1_1LOG.html#a2e039af85cdcf0f7eaa350abddb4d1e1">m_logEnabled</a>) <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160; </div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    std::string time = <a class="code" href="../../dd/d48/classSatNet_1_1Time.html#a514e5fd80235cd98fefa23403a420398">Time::Print</a>(<a class="code" href="../../dd/d48/classSatNet_1_1Time.html#a8f534313c9c5fb24c239be7423706aab">Time::Now</a>());</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    <a class="code" href="../../dc/d08/classSatNet_1_1LOG.html#ac903c8202db891170d024373861dd5d2">GetLogger</a>(<a class="code" href="../../dc/d08/classSatNet_1_1LOG.html#aba182d1121a9bea8948d107cff14745f">m_filePath</a>, <a class="code" href="../../dc/d08/classSatNet_1_1LOG.html#a9b39be789433e6a29de7830267046e01">m_fileName</a>)-&gt;info(<span class="stringliteral">&quot;[{}] {}&quot;</span>, time, StripTrailingNewline(oss));</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;}</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160; </div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;<span class="keywordtype">void</span></div>
+<div class="line"><a name="l00173"></a><span class="lineno"><a class="line" href="../../dc/d08/classSatNet_1_1LOG.html#ac54ec0a16a70a5efa879398b99cc483d">  173</a></span>&#160;<a class="code" href="../../dc/d08/classSatNet_1_1LOG.html#ac54ec0a16a70a5efa879398b99cc483d">LOG::WriteToFileWithoutTime</a>(std::string oss)</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;{</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    <span class="keywordflow">if</span>(!<a class="code" href="../../dc/d08/classSatNet_1_1LOG.html#a2e039af85cdcf0f7eaa350abddb4d1e1">m_logEnabled</a>) <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160; </div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    <a class="code" href="../../dc/d08/classSatNet_1_1LOG.html#ac903c8202db891170d024373861dd5d2">GetLogger</a>(<a class="code" href="../../dc/d08/classSatNet_1_1LOG.html#aba182d1121a9bea8948d107cff14745f">m_filePath</a>, <a class="code" href="../../dc/d08/classSatNet_1_1LOG.html#a9b39be789433e6a29de7830267046e01">m_fileName</a>)-&gt;info(<span class="stringliteral">&quot;{}&quot;</span>, StripTrailingNewline(oss));</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;}</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160; </div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;<span class="keywordtype">void</span></div>
+<div class="line"><a name="l00181"></a><span class="lineno"><a class="line" href="../../dc/d08/classSatNet_1_1LOG.html#a3aadf74cbfa00e51a174708ae2821b22">  181</a></span>&#160;<a class="code" href="../../dc/d08/classSatNet_1_1LOG.html#a3aadf74cbfa00e51a174708ae2821b22">LOG::CleanAndWrite</a>(std::string oss)</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;{</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    <span class="keywordflow">if</span>(!<a class="code" href="../../dc/d08/classSatNet_1_1LOG.html#a2e039af85cdcf0f7eaa350abddb4d1e1">m_logEnabled</a>) <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160; </div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    <a class="code" href="../../dc/d08/classSatNet_1_1LOG.html#ae8e87e8efe24479cc914aebf7fc021d2">CheckFileExist</a>(<a class="code" href="../../dc/d08/classSatNet_1_1LOG.html#aba182d1121a9bea8948d107cff14745f">m_filePath</a>,<a class="code" href="../../dc/d08/classSatNet_1_1LOG.html#a9b39be789433e6a29de7830267046e01">m_fileName</a>,<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    </div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    <span class="comment">// lock log file</span></div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    std::lock_guard&lt;std::mutex&gt; lock(<a class="code" href="../../dc/d08/classSatNet_1_1LOG.html#aef78fb231f48ca2d4de545a35717d6a7">GetFileMutex</a>(<a class="code" href="../../dc/d08/classSatNet_1_1LOG.html#aba182d1121a9bea8948d107cff14745f">m_filePath</a> + <a class="code" href="../../dc/d08/classSatNet_1_1LOG.html#a9b39be789433e6a29de7830267046e01">m_fileName</a>));</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160; </div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    std::ofstream file(<a class="code" href="../../dc/d08/classSatNet_1_1LOG.html#aba182d1121a9bea8948d107cff14745f">m_filePath</a> + <a class="code" href="../../dc/d08/classSatNet_1_1LOG.html#a9b39be789433e6a29de7830267046e01">m_fileName</a>, std::ios::trunc);</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    file &lt;&lt; oss;</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;}</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160; </div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;<span class="keywordtype">void</span></div>
+<div class="line"><a name="l00195"></a><span class="lineno"><a class="line" href="../../dc/d08/classSatNet_1_1LOG.html#a514e923b26c3916cdb13bf1eef4bf6e3">  195</a></span>&#160;<a class="code" href="../../dc/d08/classSatNet_1_1LOG.html#aee148a8431535cf8da2aa7f0d2147f2c">LOG::WriteToFile</a>(std::string oss, std::string fpath, std::string name) <span class="comment">// with file context</span></div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;{</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    <span class="keywordflow">if</span>(!<a class="code" href="../../dc/d08/classSatNet_1_1LOG.html#a2e039af85cdcf0f7eaa350abddb4d1e1">m_logEnabled</a>) <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160; </div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    <span class="comment">// Unlike the default-file overload, this one never prepended a timestamp --</span></div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    <span class="comment">// most of its callers write raw &quot;&lt;time&gt; &lt;value&gt;&quot; data lines (e.g. tsAllocKbps)</span></div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    <span class="comment">// where the timestamp is already part of oss itself.</span></div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    <a class="code" href="../../dc/d08/classSatNet_1_1LOG.html#ac903c8202db891170d024373861dd5d2">GetLogger</a>(fpath, name)-&gt;info(<span class="stringliteral">&quot;{}&quot;</span>, StripTrailingNewline(oss));</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;}</div>
 <div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160; </div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    <span class="comment">// lock log file</span></div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    std::lock_guard&lt;std::mutex&gt; lock(<a class="code" href="../../dc/d08/classSatNet_1_1LOG.html#aef78fb231f48ca2d4de545a35717d6a7">GetFileMutex</a>(fpath + name));</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    </div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    std::ofstream file(fpath + name, std::ios::trunc);</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    file &lt;&lt; oss;</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;}</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;<span class="keywordtype">void</span></div>
+<div class="line"><a name="l00206"></a><span class="lineno"><a class="line" href="../../dc/d08/classSatNet_1_1LOG.html#aaee74a4bde7cc98e0b0fc98a91cf1f56">  206</a></span>&#160;<a class="code" href="../../dc/d08/classSatNet_1_1LOG.html#a3aadf74cbfa00e51a174708ae2821b22">LOG::CleanAndWrite</a>(std::string oss, std::string fpath, std::string name) <span class="comment">// with file context</span></div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;{</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    <span class="keywordflow">if</span>(!<a class="code" href="../../dc/d08/classSatNet_1_1LOG.html#a2e039af85cdcf0f7eaa350abddb4d1e1">m_logEnabled</a>) <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    </div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    <a class="code" href="../../dc/d08/classSatNet_1_1LOG.html#ae8e87e8efe24479cc914aebf7fc021d2">CheckFileExist</a>(fpath,name,<span class="keyword">true</span>);</div>
 <div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160; </div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;}</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    <span class="comment">// lock log file</span></div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    std::lock_guard&lt;std::mutex&gt; lock(<a class="code" href="../../dc/d08/classSatNet_1_1LOG.html#aef78fb231f48ca2d4de545a35717d6a7">GetFileMutex</a>(fpath + name));</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    </div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;    std::ofstream file(fpath + name, std::ios::trunc);</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    file &lt;&lt; oss;</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;}</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160; </div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;}</div>
 <div class="ttc" id="aIncludes_8hpp_html"><div class="ttname"><a href="../../d5/db0/Includes_8hpp.html">Includes.hpp</a></div></div>
 <div class="ttc" id="aclassSatNet_1_1LOG_html_a02b05fe4ce1cd18256731f7560bef1ba"><div class="ttname"><a href="../../dc/d08/classSatNet_1_1LOG.html#a02b05fe4ce1cd18256731f7560bef1ba">SatNet::LOG::m_flushOnWrite</a></div><div class="ttdeci">bool m_flushOnWrite</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d3d/log_8hpp_source.html#l00085">log.hpp:85</a></div></div>
 <div class="ttc" id="aclassSatNet_1_1LOG_html_a2e039af85cdcf0f7eaa350abddb4d1e1"><div class="ttname"><a href="../../dc/d08/classSatNet_1_1LOG.html#a2e039af85cdcf0f7eaa350abddb4d1e1">SatNet::LOG::m_logEnabled</a></div><div class="ttdeci">bool m_logEnabled</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d3d/log_8hpp_source.html#l00083">log.hpp:83</a></div></div>
-<div class="ttc" id="aclassSatNet_1_1LOG_html_a323293d0656e10044967663cded9cea5"><div class="ttname"><a href="../../dc/d08/classSatNet_1_1LOG.html#a323293d0656e10044967663cded9cea5">SatNet::LOG::LOG</a></div><div class="ttdeci">LOG()</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/db8/log_8cpp_source.html#l00052">log.cpp:52</a></div></div>
-<div class="ttc" id="aclassSatNet_1_1LOG_html_a3aadf74cbfa00e51a174708ae2821b22"><div class="ttname"><a href="../../dc/d08/classSatNet_1_1LOG.html#a3aadf74cbfa00e51a174708ae2821b22">SatNet::LOG::CleanAndWrite</a></div><div class="ttdeci">void CleanAndWrite(std::string oss) override</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/db8/log_8cpp_source.html#l00174">log.cpp:174</a></div></div>
+<div class="ttc" id="aclassSatNet_1_1LOG_html_a323293d0656e10044967663cded9cea5"><div class="ttname"><a href="../../dc/d08/classSatNet_1_1LOG.html#a323293d0656e10044967663cded9cea5">SatNet::LOG::LOG</a></div><div class="ttdeci">LOG()</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/db8/log_8cpp_source.html#l00056">log.cpp:56</a></div></div>
+<div class="ttc" id="aclassSatNet_1_1LOG_html_a3aadf74cbfa00e51a174708ae2821b22"><div class="ttname"><a href="../../dc/d08/classSatNet_1_1LOG.html#a3aadf74cbfa00e51a174708ae2821b22">SatNet::LOG::CleanAndWrite</a></div><div class="ttdeci">void CleanAndWrite(std::string oss) override</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/db8/log_8cpp_source.html#l00181">log.cpp:181</a></div></div>
 <div class="ttc" id="aclassSatNet_1_1LOG_html_a4683ed2f7ee84d02edbee807553b6c97"><div class="ttname"><a href="../../dc/d08/classSatNet_1_1LOG.html#a4683ed2f7ee84d02edbee807553b6c97">SatNet::LOG::m_fileMutexMap</a></div><div class="ttdeci">std::unordered_map&lt; std::string, std::mutex &gt; m_fileMutexMap</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d3d/log_8hpp_source.html#l00079">log.hpp:79</a></div></div>
 <div class="ttc" id="aclassSatNet_1_1LOG_html_a7079f0d531a7699248d3b5e8a9ef5868"><div class="ttname"><a href="../../dc/d08/classSatNet_1_1LOG.html#a7079f0d531a7699248d3b5e8a9ef5868">SatNet::LOG::m_loggerMap</a></div><div class="ttdeci">std::unordered_map&lt; std::string, std::shared_ptr&lt; spdlog::logger &gt; &gt; m_loggerMap</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d3d/log_8hpp_source.html#l00077">log.hpp:77</a></div></div>
 <div class="ttc" id="aclassSatNet_1_1LOG_html_a9b39be789433e6a29de7830267046e01"><div class="ttname"><a href="../../dc/d08/classSatNet_1_1LOG.html#a9b39be789433e6a29de7830267046e01">SatNet::LOG::m_fileName</a></div><div class="ttdeci">std::string m_fileName</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d3d/log_8hpp_source.html#l00075">log.hpp:75</a></div></div>
 <div class="ttc" id="aclassSatNet_1_1LOG_html_aaeb7156dede21bf0ba56a3c1938ff477"><div class="ttname"><a href="../../dc/d08/classSatNet_1_1LOG.html#aaeb7156dede21bf0ba56a3c1938ff477">SatNet::LOG::m_mapMutex</a></div><div class="ttdeci">std::mutex m_mapMutex</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d3d/log_8hpp_source.html#l00081">log.hpp:81</a></div></div>
 <div class="ttc" id="aclassSatNet_1_1LOG_html_aba182d1121a9bea8948d107cff14745f"><div class="ttname"><a href="../../dc/d08/classSatNet_1_1LOG.html#aba182d1121a9bea8948d107cff14745f">SatNet::LOG::m_filePath</a></div><div class="ttdeci">std::string m_filePath</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d3d/log_8hpp_source.html#l00073">log.hpp:73</a></div></div>
-<div class="ttc" id="aclassSatNet_1_1LOG_html_ac54ec0a16a70a5efa879398b99cc483d"><div class="ttname"><a href="../../dc/d08/classSatNet_1_1LOG.html#ac54ec0a16a70a5efa879398b99cc483d">SatNet::LOG::WriteToFileWithoutTime</a></div><div class="ttdeci">void WriteToFileWithoutTime(std::string oss) override</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/db8/log_8cpp_source.html#l00166">log.cpp:166</a></div></div>
-<div class="ttc" id="aclassSatNet_1_1LOG_html_ac903c8202db891170d024373861dd5d2"><div class="ttname"><a href="../../dc/d08/classSatNet_1_1LOG.html#ac903c8202db891170d024373861dd5d2">SatNet::LOG::GetLogger</a></div><div class="ttdeci">std::shared_ptr&lt; spdlog::logger &gt; GetLogger(const std::string &amp;fpath, const std::string &amp;name)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/db8/log_8cpp_source.html#l00106">log.cpp:106</a></div></div>
-<div class="ttc" id="aclassSatNet_1_1LOG_html_ae8e87e8efe24479cc914aebf7fc021d2"><div class="ttname"><a href="../../dc/d08/classSatNet_1_1LOG.html#ae8e87e8efe24479cc914aebf7fc021d2">SatNet::LOG::CheckFileExist</a></div><div class="ttdeci">void CheckFileExist(std::string filePath, std::string name, bool erase)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/db8/log_8cpp_source.html#l00066">log.cpp:66</a></div></div>
-<div class="ttc" id="aclassSatNet_1_1LOG_html_aee148a8431535cf8da2aa7f0d2147f2c"><div class="ttname"><a href="../../dc/d08/classSatNet_1_1LOG.html#aee148a8431535cf8da2aa7f0d2147f2c">SatNet::LOG::WriteToFile</a></div><div class="ttdeci">void WriteToFile(std::string oss) override</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/db8/log_8cpp_source.html#l00157">log.cpp:157</a></div></div>
+<div class="ttc" id="aclassSatNet_1_1LOG_html_ac54ec0a16a70a5efa879398b99cc483d"><div class="ttname"><a href="../../dc/d08/classSatNet_1_1LOG.html#ac54ec0a16a70a5efa879398b99cc483d">SatNet::LOG::WriteToFileWithoutTime</a></div><div class="ttdeci">void WriteToFileWithoutTime(std::string oss) override</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/db8/log_8cpp_source.html#l00173">log.cpp:173</a></div></div>
+<div class="ttc" id="aclassSatNet_1_1LOG_html_ac903c8202db891170d024373861dd5d2"><div class="ttname"><a href="../../dc/d08/classSatNet_1_1LOG.html#ac903c8202db891170d024373861dd5d2">SatNet::LOG::GetLogger</a></div><div class="ttdeci">std::shared_ptr&lt; spdlog::logger &gt; GetLogger(const std::string &amp;fpath, const std::string &amp;name)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/db8/log_8cpp_source.html#l00113">log.cpp:113</a></div></div>
+<div class="ttc" id="aclassSatNet_1_1LOG_html_ae8e87e8efe24479cc914aebf7fc021d2"><div class="ttname"><a href="../../dc/d08/classSatNet_1_1LOG.html#ae8e87e8efe24479cc914aebf7fc021d2">SatNet::LOG::CheckFileExist</a></div><div class="ttdeci">void CheckFileExist(std::string filePath, std::string name, bool erase)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/db8/log_8cpp_source.html#l00073">log.cpp:73</a></div></div>
+<div class="ttc" id="aclassSatNet_1_1LOG_html_aee148a8431535cf8da2aa7f0d2147f2c"><div class="ttname"><a href="../../dc/d08/classSatNet_1_1LOG.html#aee148a8431535cf8da2aa7f0d2147f2c">SatNet::LOG::WriteToFile</a></div><div class="ttdeci">void WriteToFile(std::string oss) override</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/db8/log_8cpp_source.html#l00164">log.cpp:164</a></div></div>
 <div class="ttc" id="aclassSatNet_1_1LOG_html_aef78fb231f48ca2d4de545a35717d6a7"><div class="ttname"><a href="../../dc/d08/classSatNet_1_1LOG.html#aef78fb231f48ca2d4de545a35717d6a7">SatNet::LOG::GetFileMutex</a></div><div class="ttdeci">std::mutex &amp; GetFileMutex(const std::string &amp;path)</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d3d/log_8hpp_source.html#l00057">log.hpp:57</a></div></div>
 <div class="ttc" id="aclassSatNet_1_1Time_html_a514e5fd80235cd98fefa23403a420398"><div class="ttname"><a href="../../dd/d48/classSatNet_1_1Time.html#a514e5fd80235cd98fefa23403a420398">SatNet::Time::Print</a></div><div class="ttdeci">static std::string Print(double t_delay)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/daf/time_8cpp_source.html#l00058">time.cpp:58</a></div></div>
 <div class="ttc" id="aclassSatNet_1_1Time_html_a8f534313c9c5fb24c239be7423706aab"><div class="ttname"><a href="../../dd/d48/classSatNet_1_1Time.html#a8f534313c9c5fb24c239be7423706aab">SatNet::Time::Now</a></div><div class="ttdeci">static double Now()</div><div class="ttdef"><b>Definition:</b> <a href="../../de/daf/time_8cpp_source.html#l00025">time.cpp:25</a></div></div>

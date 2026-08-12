@@ -101,20 +101,21 @@ Collaboration diagram for SatNet::BeamScheduler:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d9/df6/classSatNet_1_1BeamScheduler__coll__graph.png" border="0" usemap="#aSatNet_1_1BeamScheduler_coll__map" alt="Collaboration graph"/></div>
 <map name="aSatNet_1_1BeamScheduler_coll__map" id="aSatNet_1_1BeamScheduler_coll__map">
-<area shape="rect" title=" " alt="" coords="1447,635,1623,661"/>
-<area shape="rect" href="../../dc/d08/classSatNet_1_1LOG.html" title=" " alt="" coords="169,437,270,464"/>
-<area shape="rect" href="../../df/da8/classSatNet_1_1SuperFrame.html" title=" " alt="" coords="1147,660,1299,687"/>
-<area shape="rect" href="../../de/d1b/classSatNet_1_1NccNetDev.html" title=" " alt="" coords="407,372,553,399"/>
-<area shape="rect" href="../../d1/dfa/classSatNet_1_1NccLlc.html" title=" " alt="" coords="820,395,936,421"/>
-<area shape="rect" href="../../d2/dc8/classSatNet_1_1NccMac.html" title=" " alt="" coords="1160,333,1285,360"/>
-<area shape="rect" href="../../d7/d88/classSatNet_1_1NccPhy.html" title=" " alt="" coords="1473,333,1596,360"/>
-<area shape="rect" href="../../db/d64/classSatNet_1_1NccCore.html" title=" " alt="" coords="416,160,544,187"/>
-<area shape="rect" href="../../d3/da5/classSatNet_1_1HandoverModule.html" title=" " alt="" coords="577,280,763,307"/>
-<area shape="rect" href="../../d3/db8/classSatNet_1_1PacketTracer.html" title=" " alt="" coords="593,515,747,541"/>
-<area shape="rect" href="../../d9/dd0/classSatNet_1_1ILog.html" title=" " alt="" coords="5,437,107,464"/>
-<area shape="rect" href="../../de/d81/classSatNet_1_1SuperFrameConf.html" title=" " alt="" coords="787,559,969,585"/>
-<area shape="rect" href="../../d9/d27/classSatNet_1_1Address.html" title=" " alt="" coords="156,160,283,187"/>
-<area shape="rect" href="../../d9/de5/classSatNet_1_1SocketManager.html" title=" " alt="" coords="791,219,965,245"/>
+<area shape="rect" title=" " alt="" coords="1499,144,1675,171"/>
+<area shape="rect" href="../../dc/d08/classSatNet_1_1LOG.html" title=" " alt="" coords="169,372,270,399"/>
+<area shape="rect" href="../../df/da8/classSatNet_1_1SuperFrame.html" title=" " alt="" coords="1199,144,1351,171"/>
+<area shape="rect" href="../../de/d1b/classSatNet_1_1NccNetDev.html" title=" " alt="" coords="459,571,605,597"/>
+<area shape="rect" href="../../d1/dfa/classSatNet_1_1NccLlc.html" title=" " alt="" coords="872,635,988,661"/>
+<area shape="rect" href="../../d2/dc8/classSatNet_1_1NccMac.html" title=" " alt="" coords="1212,471,1337,497"/>
+<area shape="rect" href="../../d7/d88/classSatNet_1_1NccPhy.html" title=" " alt="" coords="1525,371,1648,397"/>
+<area shape="rect" href="../../db/d64/classSatNet_1_1NccCore.html" title=" " alt="" coords="468,680,596,707"/>
+<area shape="rect" href="../../d3/da5/classSatNet_1_1HandoverModule.html" title=" " alt="" coords="629,349,815,376"/>
+<area shape="rect" href="../../d3/db8/classSatNet_1_1PacketTracer.html" title=" " alt="" coords="645,408,799,435"/>
+<area shape="rect" href="../../d9/dd0/classSatNet_1_1ILog.html" title=" " alt="" coords="5,233,107,260"/>
+<area shape="rect" href="../../de/d3c/classSatNet_1_1SyncLog.html" title=" " alt="" coords="307,21,435,48"/>
+<area shape="rect" href="../../de/d81/classSatNet_1_1SuperFrameConf.html" title=" " alt="" coords="839,181,1021,208"/>
+<area shape="rect" href="../../d9/d27/classSatNet_1_1Address.html" title=" " alt="" coords="156,680,283,707"/>
+<area shape="rect" href="../../d9/de5/classSatNet_1_1SocketManager.html" title=" " alt="" coords="843,584,1017,611"/>
 </map>
 <center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -202,6 +203,10 @@ Private Member Functions</h2></td></tr>
 <tr class="separator:a11504b4cf01dad370267cc984b50a60d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50560dfa691c3004bb56a861b7a2f3d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d1b/classSatNet_1_1BeamScheduler.html#a50560dfa691c3004bb56a861b7a2f3d1">WaitUntilOrNewUt</a> (double deadline)</td></tr>
 <tr class="separator:a50560dfa691c3004bb56a861b7a2f3d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2e722de3e6a3e7b84745addcd0fb0b6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d1b/classSatNet_1_1BeamScheduler.html#ae2e722de3e6a3e7b84745addcd0fb0b6">EnqueueBackgroundWork</a> (std::function&lt; void()&gt; work)</td></tr>
+<tr class="separator:ae2e722de3e6a3e7b84745addcd0fb0b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5f61eee51fda8fdb0249be30f7449b4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d1b/classSatNet_1_1BeamScheduler.html#aa5f61eee51fda8fdb0249be30f7449b4">BackgroundWorkerLoop</a> ()</td></tr>
+<tr class="separator:aa5f61eee51fda8fdb0249be30f7449b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -221,6 +226,16 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a8c8083395b3a7500e8efd9ad6c9c1882"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5af5d29b3916ef82215e0a5b88bd970a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/d08/classSatNet_1_1LOG.html">LOG</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d1b/classSatNet_1_1BeamScheduler.html#a5af5d29b3916ef82215e0a5b88bd970a">m_log</a></td></tr>
 <tr class="separator:a5af5d29b3916ef82215e0a5b88bd970a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1378db934ef9a3bbc9f8c383a3693f0a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d3c/classSatNet_1_1SyncLog.html">SyncLog</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d1b/classSatNet_1_1BeamScheduler.html#a1378db934ef9a3bbc9f8c383a3693f0a">m_sfPlotLog</a></td></tr>
+<tr class="separator:a1378db934ef9a3bbc9f8c383a3693f0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae51a8feeaa6c66a4707260686642532f"><td class="memItemLeft" align="right" valign="top">std::queue&lt; std::function&lt; void()&gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d1b/classSatNet_1_1BeamScheduler.html#ae51a8feeaa6c66a4707260686642532f">m_bgWorkQueue</a></td></tr>
+<tr class="separator:ae51a8feeaa6c66a4707260686642532f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7916c4d2c1e902272ce8058fd3f63fce"><td class="memItemLeft" align="right" valign="top">std::mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d1b/classSatNet_1_1BeamScheduler.html#a7916c4d2c1e902272ce8058fd3f63fce">m_bgWorkMutex</a></td></tr>
+<tr class="separator:a7916c4d2c1e902272ce8058fd3f63fce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adeed1ef95c3e50d654b0462121ac6782"><td class="memItemLeft" align="right" valign="top">std::condition_variable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d1b/classSatNet_1_1BeamScheduler.html#adeed1ef95c3e50d654b0462121ac6782">m_bgWorkCv</a></td></tr>
+<tr class="separator:adeed1ef95c3e50d654b0462121ac6782"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cb295da334ca4b9601bddcb80e2eed4"><td class="memItemLeft" align="right" valign="top">std::thread&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d1b/classSatNet_1_1BeamScheduler.html#a1cb295da334ca4b9601bddcb80e2eed4">m_bgWorkerThread</a></td></tr>
+<tr class="separator:a1cb295da334ca4b9601bddcb80e2eed4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a976744f1407e0805ecf891cc28f7e8a1"><td class="memItemLeft" align="right" valign="top">std::thread&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d1b/classSatNet_1_1BeamScheduler.html#a976744f1407e0805ecf891cc28f7e8a1">m_schedlThread</a></td></tr>
 <tr class="separator:a976744f1407e0805ecf891cc28f7e8a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e4b2878aa36a804272b8a5277859539"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d1b/classSatNet_1_1BeamScheduler.html#a4e4b2878aa36a804272b8a5277859539">m_schedl</a></td></tr>
@@ -262,7 +277,7 @@ Private Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html#l00021">21</a> of file <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html">beamScheduler.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html#l00022">22</a> of file <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html">beamScheduler.hpp</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a235d10974dff35149b0ce12d8e08e431"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a235d10974dff35149b0ce12d8e08e431">&#9670;&nbsp;</a></span>UtInfoMap</h2>
@@ -284,7 +299,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html#l00180">180</a> of file <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html">beamScheduler.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html#l00181">181</a> of file <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html">beamScheduler.hpp</a>.</p>
 
 </div>
 </div>
@@ -308,7 +323,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html#l00185">185</a> of file <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html">beamScheduler.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html#l00186">186</a> of file <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html">beamScheduler.hpp</a>.</p>
 
 </div>
 </div>
@@ -332,7 +347,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html#l00184">184</a> of file <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html">beamScheduler.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html#l00185">185</a> of file <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html">beamScheduler.hpp</a>.</p>
 
 </div>
 </div>
@@ -352,7 +367,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d22/beamScheduler_8cpp_source.html#l00022">22</a> of file <a class="el" href="../../df/d22/beamScheduler_8cpp_source.html">beamScheduler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d22/beamScheduler_8cpp_source.html#l00023">23</a> of file <a class="el" href="../../df/d22/beamScheduler_8cpp_source.html">beamScheduler.cpp</a>.</p>
 
 </div>
 </div>
@@ -373,7 +388,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d22/beamScheduler_8cpp_source.html#l00071">71</a> of file <a class="el" href="../../df/d22/beamScheduler_8cpp_source.html">beamScheduler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d22/beamScheduler_8cpp_source.html#l00083">83</a> of file <a class="el" href="../../df/d22/beamScheduler_8cpp_source.html">beamScheduler.cpp</a>.</p>
 
 </div>
 </div>
@@ -409,7 +424,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d22/beamScheduler_8cpp_source.html#l00146">146</a> of file <a class="el" href="../../df/d22/beamScheduler_8cpp_source.html">beamScheduler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d22/beamScheduler_8cpp_source.html#l00158">158</a> of file <a class="el" href="../../df/d22/beamScheduler_8cpp_source.html">beamScheduler.cpp</a>.</p>
 
 </div>
 </div>
@@ -447,7 +462,34 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d22/beamScheduler_8cpp_source.html#l00433">433</a> of file <a class="el" href="../../df/d22/beamScheduler_8cpp_source.html">beamScheduler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d22/beamScheduler_8cpp_source.html#l00471">471</a> of file <a class="el" href="../../df/d22/beamScheduler_8cpp_source.html">beamScheduler.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aa5f61eee51fda8fdb0249be30f7449b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5f61eee51fda8fdb0249be30f7449b4">&#9670;&nbsp;</a></span>BackgroundWorkerLoop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SatNet::BeamScheduler::BackgroundWorkerLoop </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d22/beamScheduler_8cpp_source.html#l00254">254</a> of file <a class="el" href="../../df/d22/beamScheduler_8cpp_source.html">beamScheduler.cpp</a>.</p>
 
 </div>
 </div>
@@ -474,7 +516,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d22/beamScheduler_8cpp_source.html#l00232">232</a> of file <a class="el" href="../../df/d22/beamScheduler_8cpp_source.html">beamScheduler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d22/beamScheduler_8cpp_source.html#l00270">270</a> of file <a class="el" href="../../df/d22/beamScheduler_8cpp_source.html">beamScheduler.cpp</a>.</p>
 
 </div>
 </div>
@@ -493,7 +535,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d22/beamScheduler_8cpp_source.html#l00280">280</a> of file <a class="el" href="../../df/d22/beamScheduler_8cpp_source.html">beamScheduler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d22/beamScheduler_8cpp_source.html#l00318">318</a> of file <a class="el" href="../../df/d22/beamScheduler_8cpp_source.html">beamScheduler.cpp</a>.</p>
 
 </div>
 </div>
@@ -512,7 +554,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d22/beamScheduler_8cpp_source.html#l00051">51</a> of file <a class="el" href="../../df/d22/beamScheduler_8cpp_source.html">beamScheduler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d22/beamScheduler_8cpp_source.html#l00063">63</a> of file <a class="el" href="../../df/d22/beamScheduler_8cpp_source.html">beamScheduler.cpp</a>.</p>
 
 </div>
 </div>
@@ -531,7 +573,35 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d22/beamScheduler_8cpp_source.html#l00697">697</a> of file <a class="el" href="../../df/d22/beamScheduler_8cpp_source.html">beamScheduler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d22/beamScheduler_8cpp_source.html#l00814">814</a> of file <a class="el" href="../../df/d22/beamScheduler_8cpp_source.html">beamScheduler.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ae2e722de3e6a3e7b84745addcd0fb0b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2e722de3e6a3e7b84745addcd0fb0b6">&#9670;&nbsp;</a></span>EnqueueBackgroundWork()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SatNet::BeamScheduler::EnqueueBackgroundWork </td>
+          <td>(</td>
+          <td class="paramtype">std::function&lt; void()&gt;&#160;</td>
+          <td class="paramname"><em>work</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d22/beamScheduler_8cpp_source.html#l00244">244</a> of file <a class="el" href="../../df/d22/beamScheduler_8cpp_source.html">beamScheduler.cpp</a>.</p>
 
 </div>
 </div>
@@ -551,7 +621,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d22/beamScheduler_8cpp_source.html#l00300">300</a> of file <a class="el" href="../../df/d22/beamScheduler_8cpp_source.html">beamScheduler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d22/beamScheduler_8cpp_source.html#l00338">338</a> of file <a class="el" href="../../df/d22/beamScheduler_8cpp_source.html">beamScheduler.cpp</a>.</p>
 
 </div>
 </div>
@@ -570,7 +640,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d22/beamScheduler_8cpp_source.html#l00045">45</a> of file <a class="el" href="../../df/d22/beamScheduler_8cpp_source.html">beamScheduler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d22/beamScheduler_8cpp_source.html#l00057">57</a> of file <a class="el" href="../../df/d22/beamScheduler_8cpp_source.html">beamScheduler.cpp</a>.</p>
 
 </div>
 </div>
@@ -597,7 +667,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html#l00044">44</a> of file <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html">beamScheduler.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html#l00045">45</a> of file <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html">beamScheduler.hpp</a>.</p>
 
 </div>
 </div>
@@ -624,7 +694,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html#l00065">65</a> of file <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html">beamScheduler.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html#l00066">66</a> of file <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html">beamScheduler.hpp</a>.</p>
 
 </div>
 </div>
@@ -652,7 +722,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html#l00124">124</a> of file <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html">beamScheduler.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html#l00125">125</a> of file <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html">beamScheduler.hpp</a>.</p>
 
 </div>
 </div>
@@ -680,7 +750,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html#l00110">110</a> of file <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html">beamScheduler.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html#l00111">111</a> of file <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html">beamScheduler.hpp</a>.</p>
 
 </div>
 </div>
@@ -699,7 +769,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d22/beamScheduler_8cpp_source.html#l00062">62</a> of file <a class="el" href="../../df/d22/beamScheduler_8cpp_source.html">beamScheduler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d22/beamScheduler_8cpp_source.html#l00074">74</a> of file <a class="el" href="../../df/d22/beamScheduler_8cpp_source.html">beamScheduler.cpp</a>.</p>
 
 </div>
 </div>
@@ -719,7 +789,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d22/beamScheduler_8cpp_source.html#l00273">273</a> of file <a class="el" href="../../df/d22/beamScheduler_8cpp_source.html">beamScheduler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d22/beamScheduler_8cpp_source.html#l00311">311</a> of file <a class="el" href="../../df/d22/beamScheduler_8cpp_source.html">beamScheduler.cpp</a>.</p>
 
 </div>
 </div>
@@ -746,7 +816,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html#l00118">118</a> of file <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html">beamScheduler.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html#l00119">119</a> of file <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html">beamScheduler.hpp</a>.</p>
 
 </div>
 </div>
@@ -766,7 +836,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d22/beamScheduler_8cpp_source.html#l00577">577</a> of file <a class="el" href="../../df/d22/beamScheduler_8cpp_source.html">beamScheduler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d22/beamScheduler_8cpp_source.html#l00635">635</a> of file <a class="el" href="../../df/d22/beamScheduler_8cpp_source.html">beamScheduler.cpp</a>.</p>
 
 </div>
 </div>
@@ -802,7 +872,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d22/beamScheduler_8cpp_source.html#l00751">751</a> of file <a class="el" href="../../df/d22/beamScheduler_8cpp_source.html">beamScheduler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d22/beamScheduler_8cpp_source.html#l00868">868</a> of file <a class="el" href="../../df/d22/beamScheduler_8cpp_source.html">beamScheduler.cpp</a>.</p>
 
 </div>
 </div>
@@ -822,7 +892,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d22/beamScheduler_8cpp_source.html#l00039">39</a> of file <a class="el" href="../../df/d22/beamScheduler_8cpp_source.html">beamScheduler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d22/beamScheduler_8cpp_source.html#l00040">40</a> of file <a class="el" href="../../df/d22/beamScheduler_8cpp_source.html">beamScheduler.cpp</a>.</p>
 
 </div>
 </div>
@@ -850,7 +920,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html#l00035">35</a> of file <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html">beamScheduler.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html#l00036">36</a> of file <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html">beamScheduler.hpp</a>.</p>
 
 </div>
 </div>
@@ -878,7 +948,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html#l00092">92</a> of file <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html">beamScheduler.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html#l00093">93</a> of file <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html">beamScheduler.hpp</a>.</p>
 
 </div>
 </div>
@@ -898,7 +968,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d22/beamScheduler_8cpp_source.html#l00559">559</a> of file <a class="el" href="../../df/d22/beamScheduler_8cpp_source.html">beamScheduler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d22/beamScheduler_8cpp_source.html#l00617">617</a> of file <a class="el" href="../../df/d22/beamScheduler_8cpp_source.html">beamScheduler.cpp</a>.</p>
 
 </div>
 </div>
@@ -918,7 +988,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d22/beamScheduler_8cpp_source.html#l00843">843</a> of file <a class="el" href="../../df/d22/beamScheduler_8cpp_source.html">beamScheduler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d22/beamScheduler_8cpp_source.html#l00960">960</a> of file <a class="el" href="../../df/d22/beamScheduler_8cpp_source.html">beamScheduler.cpp</a>.</p>
 
 </div>
 </div>
@@ -938,7 +1008,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d22/beamScheduler_8cpp_source.html#l00513">513</a> of file <a class="el" href="../../df/d22/beamScheduler_8cpp_source.html">beamScheduler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d22/beamScheduler_8cpp_source.html#l00571">571</a> of file <a class="el" href="../../df/d22/beamScheduler_8cpp_source.html">beamScheduler.cpp</a>.</p>
 
 </div>
 </div>
@@ -957,7 +1027,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d22/beamScheduler_8cpp_source.html#l00451">451</a> of file <a class="el" href="../../df/d22/beamScheduler_8cpp_source.html">beamScheduler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d22/beamScheduler_8cpp_source.html#l00489">489</a> of file <a class="el" href="../../df/d22/beamScheduler_8cpp_source.html">beamScheduler.cpp</a>.</p>
 
 </div>
 </div>
@@ -987,7 +1057,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d22/beamScheduler_8cpp_source.html#l00345">345</a> of file <a class="el" href="../../df/d22/beamScheduler_8cpp_source.html">beamScheduler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d22/beamScheduler_8cpp_source.html#l00383">383</a> of file <a class="el" href="../../df/d22/beamScheduler_8cpp_source.html">beamScheduler.cpp</a>.</p>
 
 </div>
 </div>
@@ -1017,7 +1087,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d22/beamScheduler_8cpp_source.html#l00306">306</a> of file <a class="el" href="../../df/d22/beamScheduler_8cpp_source.html">beamScheduler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d22/beamScheduler_8cpp_source.html#l00344">344</a> of file <a class="el" href="../../df/d22/beamScheduler_8cpp_source.html">beamScheduler.cpp</a>.</p>
 
 </div>
 </div>
@@ -1045,7 +1115,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d22/beamScheduler_8cpp_source.html#l00207">207</a> of file <a class="el" href="../../df/d22/beamScheduler_8cpp_source.html">beamScheduler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d22/beamScheduler_8cpp_source.html#l00219">219</a> of file <a class="el" href="../../df/d22/beamScheduler_8cpp_source.html">beamScheduler.cpp</a>.</p>
 
 </div>
 </div>
@@ -1070,7 +1140,103 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html#l00280">280</a> of file <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html">beamScheduler.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html#l00319">319</a> of file <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html">beamScheduler.hpp</a>.</p>
+
+</div>
+</div>
+<a id="adeed1ef95c3e50d654b0462121ac6782"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adeed1ef95c3e50d654b0462121ac6782">&#9670;&nbsp;</a></span>m_bgWorkCv</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::condition_variable SatNet::BeamScheduler::m_bgWorkCv</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html#l00216">216</a> of file <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html">beamScheduler.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a1cb295da334ca4b9601bddcb80e2eed4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1cb295da334ca4b9601bddcb80e2eed4">&#9670;&nbsp;</a></span>m_bgWorkerThread</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::thread SatNet::BeamScheduler::m_bgWorkerThread</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html#l00217">217</a> of file <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html">beamScheduler.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a7916c4d2c1e902272ce8058fd3f63fce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7916c4d2c1e902272ce8058fd3f63fce">&#9670;&nbsp;</a></span>m_bgWorkMutex</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::mutex SatNet::BeamScheduler::m_bgWorkMutex</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html#l00215">215</a> of file <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html">beamScheduler.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ae51a8feeaa6c66a4707260686642532f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae51a8feeaa6c66a4707260686642532f">&#9670;&nbsp;</a></span>m_bgWorkQueue</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::queue&lt;std::function&lt;void()&gt; &gt; SatNet::BeamScheduler::m_bgWorkQueue</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html#l00214">214</a> of file <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html">beamScheduler.hpp</a>.</p>
 
 </div>
 </div>
@@ -1094,7 +1260,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html#l00279">279</a> of file <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html">beamScheduler.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html#l00318">318</a> of file <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html">beamScheduler.hpp</a>.</p>
 
 </div>
 </div>
@@ -1118,7 +1284,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html#l00204">204</a> of file <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html">beamScheduler.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html#l00229">229</a> of file <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html">beamScheduler.hpp</a>.</p>
 
 </div>
 </div>
@@ -1142,7 +1308,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html#l00203">203</a> of file <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html">beamScheduler.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html#l00228">228</a> of file <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html">beamScheduler.hpp</a>.</p>
 
 </div>
 </div>
@@ -1166,7 +1332,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html#l00278">278</a> of file <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html">beamScheduler.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html#l00317">317</a> of file <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html">beamScheduler.hpp</a>.</p>
 
 </div>
 </div>
@@ -1190,7 +1356,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html#l00188">188</a> of file <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html">beamScheduler.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html#l00189">189</a> of file <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html">beamScheduler.hpp</a>.</p>
 
 </div>
 </div>
@@ -1214,7 +1380,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html#l00187">187</a> of file <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html">beamScheduler.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html#l00188">188</a> of file <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html">beamScheduler.hpp</a>.</p>
 
 </div>
 </div>
@@ -1238,7 +1404,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html#l00196">196</a> of file <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html">beamScheduler.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html#l00221">221</a> of file <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html">beamScheduler.hpp</a>.</p>
 
 </div>
 </div>
@@ -1262,7 +1428,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html#l00201">201</a> of file <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html">beamScheduler.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html#l00226">226</a> of file <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html">beamScheduler.hpp</a>.</p>
 
 </div>
 </div>
@@ -1286,7 +1452,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html#l00192">192</a> of file <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html">beamScheduler.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html#l00193">193</a> of file <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html">beamScheduler.hpp</a>.</p>
 
 </div>
 </div>
@@ -1310,7 +1476,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html#l00189">189</a> of file <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html">beamScheduler.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html#l00190">190</a> of file <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html">beamScheduler.hpp</a>.</p>
 
 </div>
 </div>
@@ -1334,7 +1500,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html#l00198">198</a> of file <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html">beamScheduler.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html#l00223">223</a> of file <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html">beamScheduler.hpp</a>.</p>
 
 </div>
 </div>
@@ -1358,7 +1524,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html#l00199">199</a> of file <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html">beamScheduler.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html#l00224">224</a> of file <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html">beamScheduler.hpp</a>.</p>
 
 </div>
 </div>
@@ -1382,7 +1548,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html#l00224">224</a> of file <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html">beamScheduler.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html#l00249">249</a> of file <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html">beamScheduler.hpp</a>.</p>
 
 </div>
 </div>
@@ -1406,7 +1572,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html#l00216">216</a> of file <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html">beamScheduler.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html#l00241">241</a> of file <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html">beamScheduler.hpp</a>.</p>
 
 </div>
 </div>
@@ -1430,7 +1596,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html#l00217">217</a> of file <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html">beamScheduler.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html#l00242">242</a> of file <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html">beamScheduler.hpp</a>.</p>
 
 </div>
 </div>
@@ -1454,7 +1620,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html#l00226">226</a> of file <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html">beamScheduler.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html#l00251">251</a> of file <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html">beamScheduler.hpp</a>.</p>
 
 </div>
 </div>
@@ -1478,7 +1644,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html#l00227">227</a> of file <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html">beamScheduler.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html#l00252">252</a> of file <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html">beamScheduler.hpp</a>.</p>
 
 </div>
 </div>
@@ -1502,7 +1668,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html#l00194">194</a> of file <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html">beamScheduler.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html#l00219">219</a> of file <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html">beamScheduler.hpp</a>.</p>
 
 </div>
 </div>
@@ -1526,7 +1692,31 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html#l00193">193</a> of file <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html">beamScheduler.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html#l00218">218</a> of file <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html">beamScheduler.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a1378db934ef9a3bbc9f8c383a3693f0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1378db934ef9a3bbc9f8c383a3693f0a">&#9670;&nbsp;</a></span>m_sfPlotLog</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/d3c/classSatNet_1_1SyncLog.html">SyncLog</a>* SatNet::BeamScheduler::m_sfPlotLog</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html#l00202">202</a> of file <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html">beamScheduler.hpp</a>.</p>
 
 </div>
 </div>
@@ -1550,7 +1740,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html#l00195">195</a> of file <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html">beamScheduler.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html#l00220">220</a> of file <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html">beamScheduler.hpp</a>.</p>
 
 </div>
 </div>
@@ -1574,7 +1764,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html#l00197">197</a> of file <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html">beamScheduler.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html#l00222">222</a> of file <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html">beamScheduler.hpp</a>.</p>
 
 </div>
 </div>
@@ -1598,7 +1788,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html#l00206">206</a> of file <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html">beamScheduler.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html#l00231">231</a> of file <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html">beamScheduler.hpp</a>.</p>
 
 </div>
 </div>
@@ -1622,7 +1812,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html#l00182">182</a> of file <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html">beamScheduler.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html#l00183">183</a> of file <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html">beamScheduler.hpp</a>.</p>
 
 </div>
 </div>
@@ -1646,7 +1836,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html#l00181">181</a> of file <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html">beamScheduler.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html#l00182">182</a> of file <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html">beamScheduler.hpp</a>.</p>
 
 </div>
 </div>
@@ -1670,7 +1860,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html#l00190">190</a> of file <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html">beamScheduler.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html#l00191">191</a> of file <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html">beamScheduler.hpp</a>.</p>
 
 </div>
 </div>
@@ -1694,7 +1884,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html#l00186">186</a> of file <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html">beamScheduler.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html#l00187">187</a> of file <a class="el" href="../../df/d11/beamScheduler_8hpp_source.html">beamScheduler.hpp</a>.</p>
 
 </div>
 </div>

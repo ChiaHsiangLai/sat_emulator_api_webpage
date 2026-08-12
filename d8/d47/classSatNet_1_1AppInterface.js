@@ -13,7 +13,6 @@ var classSatNet_1_1AppInterface =
     [ "StartTun", "d8/d47/classSatNet_1_1AppInterface.html#a42b1376b562fc4c74829d4a2beef5263", null ],
     [ "Stop", "d8/d47/classSatNet_1_1AppInterface.html#a2ead47f36bd7526f2c8d8ab42dfc3530", null ],
     [ "TunReceiveLoop", "d8/d47/classSatNet_1_1AppInterface.html#ac5c71a2a7f3685e8d2e2c4ab4d055c75", null ],
-    [ "m_bitsCollector", "d8/d47/classSatNet_1_1AppInterface.html#abd7e86ee2dd4da7f1392cfec48e40f3a", null ],
     [ "m_bitsCollector2", "d8/d47/classSatNet_1_1AppInterface.html#a677ab3e3f4d1ae216db28968f82e1f10", null ],
     [ "m_datagramId", "d8/d47/classSatNet_1_1AppInterface.html#a8cbc9207c0eb0b1f8e038e4dcdf7c003", null ],
     [ "m_llc", "d8/d47/classSatNet_1_1AppInterface.html#a522706a9ee41fa1b3a78a34c1f62b779", null ],

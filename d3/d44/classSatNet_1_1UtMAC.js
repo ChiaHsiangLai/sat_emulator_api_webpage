@@ -90,6 +90,7 @@ var classSatNet_1_1UtMAC =
     [ "m_address", "d3/d44/classSatNet_1_1UtMAC.html#a296bd19690eae127eb02de7c0ee321e4", null ],
     [ "m_bitsColle", "d3/d44/classSatNet_1_1UtMAC.html#a06a9dc9697ff58746a40b16bf9f8a648", null ],
     [ "m_bitsColle3", "d3/d44/classSatNet_1_1UtMAC.html#a23b5999e361c4d14653f5f139eb42704", null ],
+    [ "m_bitsColleQueueRx", "d3/d44/classSatNet_1_1UtMAC.html#a455d8b84e41897062688344f9088a0e7", null ],
     [ "m_doFrmStart", "d3/d44/classSatNet_1_1UtMAC.html#a2a9db25a9d7626cef2d6b0778def7a28", null ],
     [ "m_gwAddr", "d3/d44/classSatNet_1_1UtMAC.html#adf1f741f1b7ab562533d05f7ad23fa55", null ],
     [ "m_handoverModule", "d3/d44/classSatNet_1_1UtMAC.html#a8bd077734f1552eccf1ae07746a9eef4", null ],
