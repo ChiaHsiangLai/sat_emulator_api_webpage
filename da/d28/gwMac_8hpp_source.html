@@ -190,15 +190,15 @@ $(document).ready(function(){initNavTree('da/d28/gwMac_8hpp_source.html','../../
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        {</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            std::stringstream ss(<a class="code" href="../../d2/dca/classSatNet_1_1GwMac.html#abeb52d9087675b742f60483a5216aca0">m_address</a>.<a class="code" href="../../d9/d27/classSatNet_1_1Address.html#a7deb8d54bcd23b33744aaf22dde12a5b">GetAddressVal</a>());</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            std::string seg;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            std::vector&lt;int&gt; parts;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            std::vector&lt;int&gt; <a class="code" href="../../df/d28/namespacetime__vs__data__rate__plot.html#a6874babff9ec2fd01141ad5aca0bf25a">parts</a>;</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            <span class="keywordflow">while</span> (std::getline(ss, seg, <span class="charliteral">&#39;.&#39;</span>))</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                parts.push_back(std::stoi(seg));</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                <a class="code" href="../../df/d28/namespacetime__vs__data__rate__plot.html#a6874babff9ec2fd01141ad5aca0bf25a">parts</a>.push_back(std::stoi(seg));</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;            <span class="keywordflow">if</span> (parts.size() != 4)</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="../../df/d28/namespacetime__vs__data__rate__plot.html#a6874babff9ec2fd01141ad5aca0bf25a">parts</a>.size() != 4)</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;Invalid IP format&quot;</span>);</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;            <span class="keywordflow">return</span> parts[3];</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="../../df/d28/namespacetime__vs__data__rate__plot.html#a6874babff9ec2fd01141ad5aca0bf25a">parts</a>[3];</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        }</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        <span class="comment">// Launches the background thread that drains m_rxQueue and dispatches packets</span></div>
@@ -333,6 +333,7 @@ $(document).ready(function(){initNavTree('da/d28/gwMac_8hpp_source.html','../../
 <div class="ttc" id="aclassSatNet_1_1UtRoutingTable_html"><div class="ttname"><a href="../../da/d22/classSatNet_1_1UtRoutingTable.html">SatNet::UtRoutingTable</a></div><div class="ttdef"><b>Definition:</b> <a href="../../de/d4f/routing__table_8hpp_source.html#l00063">routing_table.hpp:64</a></div></div>
 <div class="ttc" id="anamespaceSatNet_html"><div class="ttname"><a href="../../da/d8c/namespaceSatNet.html">SatNet</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d0d/address_8cpp_source.html#l00006">address.cpp:7</a></div></div>
 <div class="ttc" id="anamespacesatMobility_html_a63d56bba12f730b2363ce59a52372743"><div class="ttname"><a href="../../df/df8/namespacesatMobility.html#a63d56bba12f730b2363ce59a52372743">satMobility.filename</a></div><div class="ttdeci">string filename</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d51/satMobility_8py_source.html#l00075">satMobility.py:75</a></div></div>
+<div class="ttc" id="anamespacetime__vs__data__rate__plot_html_a6874babff9ec2fd01141ad5aca0bf25a"><div class="ttname"><a href="../../df/d28/namespacetime__vs__data__rate__plot.html#a6874babff9ec2fd01141ad5aca0bf25a">time_vs_data_rate_plot.parts</a></div><div class="ttdeci">parts</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d55/time__vs__data__rate__plot_8py_source.html#l00142">time_vs_data_rate_plot.py:142</a></div></div>
 <div class="ttc" id="arouting__table_8hpp_html"><div class="ttname"><a href="../../de/d4f/routing__table_8hpp.html">routing_table.hpp</a></div></div>
 <div class="ttc" id="asocketManager_8hpp_html"><div class="ttname"><a href="../../d0/d1a/socketManager_8hpp.html">socketManager.hpp</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

@@ -173,8 +173,8 @@ $(document).ready(function(){initNavTree('d4/d90/gwMac_8cpp_source.html','../../
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="keywordtype">void</span></div>
 <div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="../../d2/dca/classSatNet_1_1GwMac.html#a1640c70513e4abfafb01a58d416e6bb9">   86</a></span>&#160;<a class="code" href="../../d2/dca/classSatNet_1_1GwMac.html#a1640c70513e4abfafb01a58d416e6bb9">GwMac::ReceiveSignalingPacket</a>(<span class="keywordtype">int</span> sock, <a class="code" href="../../db/ddc/classSatNet_1_1Packet.html">Packet</a>* pkt)</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;{</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <a class="code" href="../../da/d8c/namespaceSatNet.html#a4599d471e20aced2f551ba50cf9af4ed">CtrlMsgType</a> type = pkt-&gt;<a class="code" href="../../db/ddc/classSatNet_1_1Packet.html#a09446aa6ed2de84ea0d755859e448c76">PeekTag</a>&lt;<a class="code" href="../../d1/d12/classSatNet_1_1CtrlMsgTag.html">CtrlMsgTag</a>&gt;()-&gt;GetMsgType();</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordflow">switch</span> (type)</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <a class="code" href="../../da/d8c/namespaceSatNet.html#a4599d471e20aced2f551ba50cf9af4ed">CtrlMsgType</a> <a class="code" href="../../d5/ddc/namespacesns3__test.html#a5032791e41eaee2b2402240ed3687b58">type</a> = pkt-&gt;<a class="code" href="../../db/ddc/classSatNet_1_1Packet.html#a09446aa6ed2de84ea0d755859e448c76">PeekTag</a>&lt;<a class="code" href="../../d1/d12/classSatNet_1_1CtrlMsgTag.html">CtrlMsgTag</a>&gt;()-&gt;GetMsgType();</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordflow">switch</span> (<a class="code" href="../../d5/ddc/namespacesns3__test.html#a5032791e41eaee2b2402240ed3687b58">type</a>)</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    {</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="../../da/d8c/namespaceSatNet.html#a4599d471e20aced2f551ba50cf9af4eda3b8a705a8aba5091949ce0274e434189">CtrlMsgType::DUMMY_MSG</a>:</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            {</div>
@@ -425,15 +425,15 @@ $(document).ready(function(){initNavTree('d4/d90/gwMac_8cpp_source.html','../../
 <div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;{</div>
 <div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;    std::stringstream ss(ip);</div>
 <div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;    std::string seg;</div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;    std::vector&lt;int&gt; parts;</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;    std::vector&lt;int&gt; <a class="code" href="../../df/d28/namespacetime__vs__data__rate__plot.html#a6874babff9ec2fd01141ad5aca0bf25a">parts</a>;</div>
 <div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160; </div>
 <div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;    <span class="keywordflow">while</span> (std::getline(ss, seg, <span class="charliteral">&#39;.&#39;</span>))</div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;        parts.push_back(std::stoi(seg));</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;        <a class="code" href="../../df/d28/namespacetime__vs__data__rate__plot.html#a6874babff9ec2fd01141ad5aca0bf25a">parts</a>.push_back(std::stoi(seg));</div>
 <div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160; </div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;    <span class="keywordflow">if</span> (parts.size() != 4)</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../df/d28/namespacetime__vs__data__rate__plot.html#a6874babff9ec2fd01141ad5aca0bf25a">parts</a>.size() != 4)</div>
 <div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;        <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;Invalid IP format&quot;</span>);</div>
 <div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160; </div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;    <span class="keywordflow">return</span> parts[2];</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../df/d28/namespacetime__vs__data__rate__plot.html#a6874babff9ec2fd01141ad5aca0bf25a">parts</a>[2];</div>
 <div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;}</div>
 <div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160; </div>
 <div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;std::string</div>
@@ -441,21 +441,21 @@ $(document).ready(function(){initNavTree('d4/d90/gwMac_8cpp_source.html','../../
 <div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;{</div>
 <div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;    std::stringstream ss(ip);</div>
 <div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;    std::string seg;</div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;    std::vector&lt;int&gt; parts;</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;    std::vector&lt;int&gt; <a class="code" href="../../df/d28/namespacetime__vs__data__rate__plot.html#a6874babff9ec2fd01141ad5aca0bf25a">parts</a>;</div>
 <div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160; </div>
 <div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;    <span class="keywordflow">while</span> (std::getline(ss, seg, <span class="charliteral">&#39;.&#39;</span>))</div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;        parts.push_back(std::stoi(seg));</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;        <a class="code" href="../../df/d28/namespacetime__vs__data__rate__plot.html#a6874babff9ec2fd01141ad5aca0bf25a">parts</a>.push_back(std::stoi(seg));</div>
 <div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160; </div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;    <span class="keywordflow">if</span> (parts.size() != 4)</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../df/d28/namespacetime__vs__data__rate__plot.html#a6874babff9ec2fd01141ad5aca0bf25a">parts</a>.size() != 4)</div>
 <div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;        <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;Invalid IP format&quot;</span>);</div>
 <div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160; </div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;    parts[2] = newSatId;</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;    <a class="code" href="../../df/d28/namespacetime__vs__data__rate__plot.html#a6874babff9ec2fd01141ad5aca0bf25a">parts</a>[2] = newSatId;</div>
 <div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160; </div>
 <div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;    <span class="comment">// Reconstruct IP</span></div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;    <span class="keywordflow">return</span> std::to_string(parts[0]) + <span class="stringliteral">&quot;.&quot;</span> +</div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;           std::to_string(parts[1]) + <span class="stringliteral">&quot;.&quot;</span> +</div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;           std::to_string(parts[2]) + <span class="stringliteral">&quot;.&quot;</span> +</div>
-<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;           std::to_string(parts[3]);</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;    <span class="keywordflow">return</span> std::to_string(<a class="code" href="../../df/d28/namespacetime__vs__data__rate__plot.html#a6874babff9ec2fd01141ad5aca0bf25a">parts</a>[0]) + <span class="stringliteral">&quot;.&quot;</span> +</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;           std::to_string(<a class="code" href="../../df/d28/namespacetime__vs__data__rate__plot.html#a6874babff9ec2fd01141ad5aca0bf25a">parts</a>[1]) + <span class="stringliteral">&quot;.&quot;</span> +</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;           std::to_string(<a class="code" href="../../df/d28/namespacetime__vs__data__rate__plot.html#a6874babff9ec2fd01141ad5aca0bf25a">parts</a>[2]) + <span class="stringliteral">&quot;.&quot;</span> +</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;           std::to_string(<a class="code" href="../../df/d28/namespacetime__vs__data__rate__plot.html#a6874babff9ec2fd01141ad5aca0bf25a">parts</a>[3]);</div>
 <div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;}</div>
 <div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160; </div>
 <div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;<span class="keywordtype">void</span></div>
@@ -840,6 +840,8 @@ $(document).ready(function(){initNavTree('d4/d90/gwMac_8cpp_source.html','../../
 <div class="ttc" id="anamespaceSatNet_html_ac36f0a0c312345a0f6204695f7bf7479a470e7064ca1110fb62e3a2b573635552"><div class="ttname"><a href="../../da/d8c/namespaceSatNet.html#ac36f0a0c312345a0f6204695f7bf7479a470e7064ca1110fb62e3a2b573635552">SatNet::AddressType::MAC48</a></div><div class="ttdeci">@ MAC48</div></div>
 <div class="ttc" id="anamespaceplot__sat__constellation__v2_html_a7668810d0d98331e59bf4b48e5803a5e"><div class="ttname"><a href="../../d9/d03/namespaceplot__sat__constellation__v2.html#a7668810d0d98331e59bf4b48e5803a5e">plot_sat_constellation_v2.ut_id</a></div><div class="ttdeci">def ut_id</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d67/plot__sat__constellation__v2_8py_source.html#l00211">plot_sat_constellation_v2.py:211</a></div></div>
 <div class="ttc" id="anamespacesatMobility_html_a63d56bba12f730b2363ce59a52372743"><div class="ttname"><a href="../../df/df8/namespacesatMobility.html#a63d56bba12f730b2363ce59a52372743">satMobility.filename</a></div><div class="ttdeci">string filename</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d51/satMobility_8py_source.html#l00075">satMobility.py:75</a></div></div>
+<div class="ttc" id="anamespacesns3__test_html_a5032791e41eaee2b2402240ed3687b58"><div class="ttname"><a href="../../d5/ddc/namespacesns3__test.html#a5032791e41eaee2b2402240ed3687b58">sns3_test.type</a></div><div class="ttdeci">type</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d8d/sns3__test_8py_source.html#l00264">sns3_test.py:264</a></div></div>
+<div class="ttc" id="anamespacetime__vs__data__rate__plot_html_a6874babff9ec2fd01141ad5aca0bf25a"><div class="ttname"><a href="../../df/d28/namespacetime__vs__data__rate__plot.html#a6874babff9ec2fd01141ad5aca0bf25a">time_vs_data_rate_plot.parts</a></div><div class="ttdeci">parts</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d55/time__vs__data__rate__plot_8py_source.html#l00142">time_vs_data_rate_plot.py:142</a></div></div>
 <div class="ttc" id="anccCore_8hpp_html"><div class="ttname"><a href="../../d9/d0a/nccCore_8hpp.html">nccCore.hpp</a></div></div>
 <div class="ttc" id="apacketTag_8hpp_html"><div class="ttname"><a href="../../d9/de0/packetTag_8hpp.html">packetTag.hpp</a></div></div>
 <div class="ttc" id="apacket_8hpp_html"><div class="ttname"><a href="../../d2/d3f/packet_8hpp.html">packet.hpp</a></div></div>
